@@ -1,0 +1,15 @@
+pp_core_homepage:
+    path:     /
+    defaults: { _controller: PPCoreBundle:Core:index }
+
+pp_core_newitem:
+    path:     /resume/newitem/{itemType}
+    defaults: { _controller: PPCoreBundle:Core:addItem }
+
+pp_core_resume:
+    path:     /resume
+    defaults: { _controller: PPCoreBundle:Core:resume }
+
+pp_core_contact:
+    path:     /contact
+    defaults: { _controller: PPCoreBundle:Core:contact }

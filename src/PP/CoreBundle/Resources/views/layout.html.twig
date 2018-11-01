@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{{ 'site.name'|trans }}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleLayout.css') }}">
+        {% block stylesheets %}
+
+        {% endblock %}
+    </head>
+    <body>
+        <header class="displayInline column">
+            <div class="displayInline verticalCenter spaceBetween">
+                <a href="{{ path('pp_core_homepage')}}" class="col-md-2">
+                    <div class="displayInline verticalCenter linkBlue">
+                        <img class="logo" src="{{ asset('bundles/ppcore/img/Logo2.png') }}" alt="Logo PP" id="logo" />
+                        <h4 class="smallMarginLeft">{{ 'site.name'|trans }}</h4>
+                    </div>
+                </a>
+
+                <div class="displayInline col-md-3 spaceBetween">
+                    <p><a class="linkBlue" href="{{ path('pp_core_homepage')}}">{{ 'header.nav.home'|trans }}</a></p>
+                    <p><a class="linkBlue" href="{{ path('pp_core_contact')}}">{{ 'header.nav.contact'|trans }}</a></p>
+                    <p><a class="linkBlue" href="{{ path('pp_core_resume')}}">{{ 'header.nav.cv'|trans }}</a></p>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <p><a class="linkBlue" href="{{ path('pp_blog_homepage')}}">{{ 'header.nav.blog'|trans }}</a></p>
+                    {% endif %}
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
+        <footer>
+            <div class="displayInline horizontalCenter verticalCenter paddingBottom paddingTop">
+                <a href="{{ path('pp_core_homepage')}}"><img class="logo" src="{{ asset('bundles/ppcore/img/Logo2.png') }}" alt="Logo PP"/></a>
+                <p class="marginLeft">Designed by <a class="linkBlue" href="http://www.lisiyuan-portfolio.com">Emeline</a></p>
+            </div>
+        </footer>
+
+        <script src="{{ asset('bundles/ppcore/js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset('bundles/ppcore/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('bundles/ppcore/js/ajax.js') }}"></script>
+        {% block javascript %}
+        {% endblock %}
+    </body>
+</html>

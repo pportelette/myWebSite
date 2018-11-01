@@ -1,0 +1,51 @@
+#Layout
+site:
+  name: Hexagone
+header:
+  nav:
+    home: Home
+    contact: Contact
+    cv: CV
+    blog: Blog
+
+#About
+about:
+  me:
+    title: ABOUT ME
+    body: | 
+      Hi, welcome to my website !
+      I am Pierre, self-taught web developer based in Shanghai.
+      Engineer in physics, I evolved in photovoltaic industry and 
+      quickly became found of web technologies.
+      Through this website you will find my realizations, blog articles
+      and my resume.
+      Please feel free to send me a message !
+  work:
+    title: ABOUT WORK
+    body: |
+      Through my work experiences, I often have been faced to issues such as sharing, centralization and remote access to information produced in the company.
+      
+      I quickly turned and passionate about web applications that are particulary well suited to solve these kind of problems.
+
+#Contact
+Phone: Phone
+Name*: Name*
+E-mail*: E-mail*
+Message*: Message*
+star: "* mandatory field"
+send_button: Send
+
+#Resume
+age: years old
+title:
+  work: WORK
+  internship: INTERNSHIPS
+  education: EDUCATION
+  languages: LANGUAGES
+  computer: COMPUTER SKILLS
+  other: OTHER ACTIVITIES
+"French:": Français :
+"English:": Anglais :
+"Chinese:": Chinois :
+"Japanese:": Japonais :
+"Web Development:": Dévelopmment web :

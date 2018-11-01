@@ -1,0 +1,68 @@
+{% extends "@PPCore//layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Blog{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/ppblog/css/styleBlog.css') }}">
+{% endblock %}
+{% block body %}
+    
+    <div class="displayInline row">
+        <div class="col-md-9">
+            {% for article in articles %}
+            <div class="displayInline marginBottom" style="height: 290px">
+                <div class="col-md-5" style="height: 80%">
+                    <img class="heightSized apercuImg" src="{{ asset('bundles/ppcore/img/photo2.jpg') }}" alt="image1"/>
+                </div>
+                <div class="col-md-7 apercuTxt premierPlan" style="height: 80%; color: black;">
+                    <a href="{{ path('pp_blog_article', {'slug': article.slug}) }}">
+                        <h3>{{ article.title}}</h3>
+                    </a>
+                    <div class="diplayInline column">
+                        {{ article.content|raw }}
+                        <div class="aFooter"></div>
+                        <div class="aFooter1 verticalCenter displayInline">Categorie | vues 36 | likes 3 | commentaires 1</div> 
+                    </div>               
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-1">
+        </div>
+        {# ASIDE #}
+        <div class="col-md-2">
+            <div class="paddingBottom">
+                <p class="blogTitle">ABOUT THIS SITE</p>
+                <p>Hi, I'm Pierre welcome to my website. Here you will find my resume and contact info. Please take a look around and don not hesitate to contact me if you have any questions, comments or business opporutinies that may be of interest.</p>
+            </div>
+            <div class="paddingLeft paddingRight">
+                <div class="borderAside paddingBottom">
+                    <p class="blogTitle">ABOUT ME</p>
+                </div>
+                <div class="borderAside">
+                    <p class="blogTitle">EMAIL</p>
+                    <p class="marginBottom">pierre.portelette@free.fr</p>
+                </div>
+                <div  class="borderAside"></div>
+            </div>
+        </div>
+    </div>
+    {# AUTRES ARTICLES #}
+    <div class="row">
+        <div class="displayInline horizontalCenter borderAside marginTop marginBottom">
+            <p class="blogTitle ">OTHER ARTICLES</p>
+        </div>
+        <div class="displayInline">
+            {% for article in otherArticles %}
+            <div class="col-md-3 card marginLeft marginRight">
+                <img class="card-img-top" src="{{ asset('bundles/ppcore/img/photo2.jpg') }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock %}
+

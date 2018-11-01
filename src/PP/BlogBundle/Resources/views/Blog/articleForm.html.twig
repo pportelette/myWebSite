@@ -1,0 +1,15 @@
+{% extends "@PPCore//layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Homepage{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('bundles/fosckeditor/contents.css') }}" type="text/css" media="all" />
+{% endblock %}
+
+{% block body %}
+    {{ form(form) }}
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ asset('bundles/fosckeditor/ckeditor.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,126 @@
+<?php
+
+namespace PP\CoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Education
+ *
+ * @ORM\Table(name="education")
+ * @ORM\Entity(repositoryClass="PP\CoreBundle\Repository\EducationRepository")
+ */
+class Education extends Experience
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="schoolName", type="string", length=100)
+     */
+    private $schoolName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="diploma", type="string", length=255)
+     */
+    private $diploma;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="major", type="string", length=255)
+     */
+    private $major;
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set schoolName
+     *
+     * @param string $schoolName
+     *
+     * @return Education
+     */
+    public function setSchoolName($schoolName)
+    {
+        $this->schoolName = $schoolName;
+
+        return $this;
+    }
+
+    /**
+     * Get schoolName
+     *
+     * @return string
+     */
+    public function getSchoolName()
+    {
+        return $this->schoolName;
+    }
+
+    /**
+     * Set diploma
+     *
+     * @param string $diploma
+     *
+     * @return Education
+     */
+    public function setDiploma($diploma)
+    {
+        $this->diploma = $diploma;
+
+        return $this;
+    }
+
+    /**
+     * Get diploma
+     *
+     * @return string
+     */
+    public function getDiploma()
+    {
+        return $this->diploma;
+    }
+
+    /**
+     * Set major.
+     *
+     * @param string $major
+     *
+     * @return Education
+     */
+    public function setMajor($major)
+    {
+        $this->major = $major;
+
+        return $this;
+    }
+
+    /**
+     * Get major.
+     *
+     * @return string
+     */
+    public function getMajor()
+    {
+        return $this->major;
+    }
+}

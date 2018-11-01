@@ -1,0 +1,12 @@
+pp_blog_homepage:
+    path:     /
+    defaults: { _controller: PPBlogBundle:Blog:home }
+
+pp_blog_article:
+    path:     /article/{slug}
+    defaults: 
+        _controller: PPBlogBundle:Blog:article
+
+pp_blog_new:
+    path:     /new
+    defaults: { _controller: PPBlogBundle:Blog:new }

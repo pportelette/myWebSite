@@ -1,0 +1,233 @@
+:root {
+    --night: #0C1B31;
+    --myorange: #D45440;
+    --mygray: #F2F2F2;
+}
+p {
+    margin: 0; 
+    padding: 0;
+}
+.marginBottom{
+    margin-bottom: 10px;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+.marginLeft{
+    margin-left: 40px;
+}
+
+.smallMarginLeft{
+    margin-left: 15px;
+}
+
+.smallMarginRight{
+    margin-right: 15px;
+}
+
+.marginRight{
+    margin-right: 40px;
+}
+
+.paddingLeft{
+    padding-left: 15px;
+}
+
+.paddingRight{
+    padding-right: 15px;
+}
+
+.paddingTop{
+    padding-top: 15px;
+}
+.paddingBottom{
+    padding-bottom: 15px;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    min-height: calc(100vh - 125px);
+}
+
+.displayInline{
+    display: flex;
+}
+
+.verticalTop {
+    align-items: flex-start;
+}
+
+.verticalCenter {
+    align-items: center;
+}
+
+.verticalBottom {
+    align-items: flex-end;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.horizontalLeft {
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.horizontalCenter {
+    justify-content: center;
+}
+
+.horizontalRight {
+    justify-content: flex-end;
+    padding-right: 0px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.bordered {
+    border: white 1px solid;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+header, footer{
+    background-color: #F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header {
+    border-bottom: #0C1B31 2px solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+footer {
+    border-top: #0C1B31 2px solid;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.widthSized {
+    width:100%;
+    display:block;
+}
+
+.heightSized {
+    height:100%;
+    display:block;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.linkWhite {
+    color: white;
+}
+.linkWhite:hover svg, .linkBlue:hover svg, .linkWhite:hover, .linkBlue:hover {
+    color: #D45440;
+    fill: #D45440;
+}
+.linkBlue {
+    color: #0C1B31;
+}
+
+.hilight:focus {
+    border: #D45440 1px solid;
+}
+
+.form-control {
+    border: #0C1B31 1px solid;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border: #D45440 1px solid;
+    box-shadow: none;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.logo {
+    border: #0C1B31 1px solid;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.mygrey {
+    background-color: #F2F2F2;
+    color: #0C1B31;
+    border-left: #0C1B31 1.5px solid;
+    border-top: #0C1B31 1.5px solid;
+    border-bottom: #0C1B31 1.5px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.night {
+    background-color: #0C1B31;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fontOrange {
+    color: #D45440;
+}
+
+.premierplan {
+    z-index: 3;
+}
+
+.secondplan {
+    z-index: 2;
+    position: absolute;
+}
+.thirdplan {
+    z-index: 1;
+}
+
+.iconBlue:hover, .iconWhite:hover {
+    fill: #D45440;
+}

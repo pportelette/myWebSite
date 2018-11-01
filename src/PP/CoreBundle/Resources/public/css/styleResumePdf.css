@@ -1,0 +1,348 @@
+:root {
+    --night: #0C1B31;
+    --myorange: #D45440;
+    --mygray: #F2F2F2;
+}
+p {
+    margin: 0; 
+    padding: 0;
+}
+.marginBottom{
+    margin-bottom: 10px;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+.marginLeft{
+    margin-left: 40px;
+}
+
+.smallMarginLeft{
+    margin-left: 15px;
+}
+.smallMarginRight{
+    margin-Right: 15px;
+}
+
+.marginRight{
+    margin-right: 40px;
+}
+
+.paddingLeft{
+    padding-left: 15px;
+}
+
+.paddingRight{
+    padding-right: 15px;
+}
+
+.paddingTop{
+    padding-top: 15px;
+}
+.paddingBottom{
+    padding-bottom: 15px;
+}
+.container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.sections {
+    background-color: #0C1B31;
+}
+
+.displayInline{
+    display: inline-block;
+}
+
+.verticalTop {
+    align-items: flex-start;
+}
+
+.verticalCenter {
+    align-items: center;
+}
+
+.verticalBottom {
+    align-items: flex-end;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.horizontalLeft {
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.horizontalCenter {
+    justify-content: center;
+}
+
+.horizontalRight {
+    justify-content: flex-end;
+    padding-right: 0px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.bordered {
+    border: white 1px solid;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+header, footer{
+    background-color: #F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header {
+    border-bottom: #0C1B31 2px solid;
+}
+
+footer {
+    border-top: #0C1B31 2px solid;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.widthSized {
+    width:100%;
+    display:block;
+}
+
+.heightSized {
+    height:100%;
+    display:block;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.linkWhite {
+    color: white;
+}
+.linkWhite:hover, .linkBlue:hover {
+    color: #D45440;
+}
+.linkBlue {
+    color: #0C1B31;
+}
+
+.hilight:focus {
+    border: #D45440 1px solid;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.logo {
+    border: #0C1B31 2px solid;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.mygrey {
+    background-color: #F2F2F2;
+    color: #0C1B31;
+    border-left: #0C1B31 1.5px solid;
+    border-top: #0C1B31 1.5px solid;
+    border-bottom: #0C1B31 1.5px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.night {
+    background-color: #0C1B31;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fontGrey {
+    color: #F2F2F2;
+}
+
+.fontOrange {
+    color: #D45440;
+}
+
+.fontNight {
+    color: #0C1B31;
+}
+
+.premierplan {
+    z-index: 3;
+}
+
+.secondplan {
+    z-index: 2;
+    position: absolute;
+}
+.thirdplan {
+    z-index: 1;
+}
+
+div {
+    margin: 0; 
+    padding: 0;
+}
+
+.deco {
+    background-color: #D45440;
+}
+
+.element:nth-child(1)
+{
+    height: 45%;
+}
+.element:nth-child(2)
+{
+    height: 55%;
+}
+
+.premierplan {
+    z-index: 1;
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-color: #D45440;
+}
+
+.resumeTitle {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.resumeItemTitle {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.resumeItemSubtitle {
+    font-size: small;
+}
+
+.companyName {
+    color: #D45440;
+    font-weight: bold;
+}
+
+.education {
+    text-align: right;
+}
+
+.lineNight {
+    border-bottom: #0C1B31 1.5px solid;
+    border-top: #F2F2F2 1px solid;
+}
+
+.lineGrey {
+    border-bottom: white 1.5px solid;
+    border-top: #0C1B31 1px solid
+}
+
+.mygrey .resumeTitle{
+    color: #0C1B31;
+}
+
+.night .resumeTitle{
+    color: white;
+}
+
+.col-md-6, .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-md-3{
+    width: 31%;
+    padding-left: 0px;
+}
+
+.photoResume {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 130px;
+    border: 6px #F2F2F2 solid;
+    border-radius: 50%;
+    margin-left: -65px;
+}
+
+.underline {
+    border-bottom: #D45440 1px solid;
+}
+
+button {
+    border: 0px;
+    background-color: #F2F2F2;
+}
+
+section {
+    position: relative; 
+    display: inline-block;
+    vertical-align: top;
+    height: 75%;
+}
+
+section:first-child {
+    width: 50%;
+}
+
+section:last-child {
+    width: 49%;
+}
+
+.language {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hobbyWhite {
+    fill:white;
+}
+
+.hobbyOrange {
+    fill: #D45440;
+}
+

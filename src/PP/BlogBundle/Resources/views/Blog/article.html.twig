@@ -1,0 +1,60 @@
+{% extends "@PPCore//layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Article{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/ppblog/css/styleBlog.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="displayInline">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-7">
+        {# ARTICLE #}
+            <div class="">
+                <p class="articleTitle">{{ article.title}}</p>
+                <p class="fontOrange">{{ article.createdAt|date('d/m/Y') }}</p>
+            </div>
+            <div class="marginTop">
+                <img class="widthSized apercuImg" src="{{ asset('bundles/ppcore/img/photo2.jpg') }}" alt="image1"/>
+            </div>
+            <div class="article">
+                {{ article.content|raw }}
+            </div>
+        {# COMMENTS #}
+            <p class="articleTitle marginTop marginBottom">Leave a message</p>
+            {{ include("@PPBlog/Blog/commentForm.html.twig") }}
+            {% for comment in listComments %}
+            <div class="borderAside">
+                <p class="articleTitle marginTop">{{ comment.username }}</p>
+                <p class="fontOrange marginBottom">{{ comment.date|date('d/m/Y H:i') }}
+                <p class="marginBottom">{{ comment.content }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-1">
+        </div>
+        {# ASIDE #}
+        <div class="col-md-2">
+            <div class="paddingBottom">
+                <p class="blogTitle">ABOUT THIS SITE</p>
+                <p>Hi, I'm Pierre welcome to my website. Here you will find my resume and contact info. Please take a look around and don not hesitate to contact me if you have any questions, comments or business opporutinies that may be of interest.</p>
+            </div>
+            <div class="paddingLeft paddingRight">
+                <div class="borderAside">
+                    <p class="blogTitle">ABOUT ME</p>
+                </div>
+                <div class="borderAside paddingBottom">
+                    <p class="blogTitle">EMAIL</p>
+                    <p class="center">pierre.portelette@free.fr</p>
+                </div>
+                <div  class="borderAside"></div>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+{% endblock %}
+
+

@@ -1,0 +1,7 @@
+{% for comment in listComments %}
+<div class="borderAside">
+    <p class="articleTitle marginTop">{{ comment.username }}</p>
+    <p class="fontOrange marginBottom">{{ comment.date|date('d/m/Y H:i') }}
+    <p class="marginBottom">{{ comment.content }}</p>
+</div>
+{% endfor %}

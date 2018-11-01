@@ -1,0 +1,22 @@
+pp_blog:
+    resource: "@PPBlogBundle/Resources/config/routing.yml"
+    prefix:   /blog/
+
+pp_core:
+    resource: "@PPCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pp_user:
+    resource: "@PPUserBundle/Resources/config/routing.yml"
+    prefix:   /user/
+
+login:
+    path: /login
+    defaults:
+        _controller: PPUserBundle:Security:login
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout

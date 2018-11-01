@@ -1,0 +1,56 @@
+#Layout
+header:
+  nav:
+    home: Home
+    contact: Contact
+    cv: CV
+    blog: Blog
+
+#About
+about:
+  me:
+    title: A PROPOS
+    body: | 
+      Bonjour et bienvenue sur ce site !
+      Je suis Pierre, développeur web autodidacte basé à Shanghai.
+      Ingénieur en physique de formation, j'ai évolué dans l'industrie 
+      solaire photovoltaïque et me suis rapidement passionné par les 
+      technologies web.
+      Au travers de ce site, découvrez mes réalisations, articles de blog
+      ainsi que mon parcours et n'hésitez pas à me contacter !
+  work:
+    title: ABOUT WORK
+    body: |
+      Au cours de mes différentes expériences professionnelles, j'ai été régulièrement amené à répondre à des problématiques de partage, de centralisation et d'accès à distance aux informations produites en entreprise.
+      
+      Je me suis rapidement tourné et passionné vers les applications web qui répondent particulièrement bien à ces questions.
+
+#contact
+Phone: Téléphone
+Name*: Nom*
+E-mail*: E-mail*
+Message*: Message*
+star: "* Champ obligatoire"
+send_button: Envoyer
+
+#Resume
+age: ans
+title:
+  work: EXPERIENCE_PROFESSIONNELLE
+  internship: STAGES
+  education: FORMATION
+  languages: LANGUES
+  computer: INFORMATIQUE
+  other: LOISIRS
+"French:": Français :
+Native: Langue maternelle
+"English:": Anglais :
+Advanced: Avancé
+"Chinese:": Chinois :
+Intermediate (HSK 4): Intermédiaire (HSK 4)
+"Japanese:": Japonais :
+Beginner: Débutant
+"Web development:": Développement web :
+
+Lyon: coucou
+Shanghai: Shanghai

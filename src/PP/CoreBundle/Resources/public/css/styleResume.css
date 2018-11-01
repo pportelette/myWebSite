@@ -1,0 +1,128 @@
+:root {
+    --night: #0C1B31;
+    --myorange: #D45440;
+    --mygray: #F2F2F2;
+}
+body {
+    background-color: #F2F2F2;
+}
+
+div {
+    margin: 0; 
+    padding: 0;
+}
+
+.deco {
+    background-color: #D45440;
+}
+
+.element:nth-child(1)
+{
+    height: 45%;
+}
+.element:nth-child(2)
+{
+    height: 55%;
+}
+
+.premierplan {
+    z-index: 1;
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-color: #D45440;
+}
+
+icon {
+    height: 200px;
+}
+
+.resumeTitle {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.resumeItemTitle {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.resumeItemSubtitle {
+    font-size: small;
+}
+
+.companyName {
+    color: #D45440;
+    font-weight: bold;
+}
+
+.education {
+    text-align: right;
+}
+
+.lineNight {
+    border-bottom: #0C1B31 1.5px solid;
+    border-top: #F2F2F2 1px solid;
+}
+
+.lineGrey {
+    border-bottom: white 1.5px solid;
+    border-top: #0C1B31 1px solid
+}
+
+.mygrey .resumeTitle{
+    color: #0C1B31;
+}
+
+.night .resumeTitle{
+    color: white;
+}
+
+.col-md-6, .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.photoResume {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 160px;
+    border: 6px #F2F2F2 solid;
+    border-radius: 50%;
+    margin-left: -80px;
+}
+
+.underline {
+    border-bottom: #D45440 1px solid;
+}
+
+button {
+    border: 0px;
+    background-color: #F2F2F2;
+}
+
+.language {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.iconBlue {
+    height: 30px;
+    fill:#0C1B31;
+}
+
+.iconWhite {
+    height: 30px;
+    fill:white;
+}
+
+.hobbyWhite {
+    fill:white;
+}
+
+.hobbyOrange {
+    fill: #D45440;
+}
