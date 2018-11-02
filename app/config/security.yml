@@ -31,7 +31,7 @@ security:
                 check_path: login_check
             logout:
                 path:   logout
-                target: login
+                target: /
 
     access_control:
         - { path: ^/blog, roles: ROLE_ADMIN }

@@ -9,25 +9,7 @@
         {% endblock %}
     </head>
     <body>
-        <header class="displayInline column navbar-fixed-top" style="display:none">
-            <div class="displayInline verticalCenter spaceBetween">
-                <a href="{{ path('pp_core_homepage')}}" class="col-md-4">
-                    <div class="displayInline verticalCenter linkBlue">
-                        <img class="logo" src="{{ asset('bundles/ppcore/img/Logo2.png') }}" alt="Logo PP" id="logo" />
-                        <h4 class="smallMarginLeft">{{ 'site.name'|trans }}</h4>
-                    </div>
-                </a>
 
-                <div class="displayInline col-md-3 spaceBetween">
-                    <p><a class="linkBlue" href="{{ path('pp_core_homepage')}}">{{ 'header.nav.home'|trans }}</a></p>
-                    <p><a class="linkBlue" href="{{ path('pp_core_contact')}}">{{ 'header.nav.contact'|trans }}</a></p>
-                    <p><a class="linkBlue" href="{{ path('pp_core_resume')}}">{{ 'header.nav.cv'|trans }}</a></p>
-                    {% if is_granted('ROLE_ADMIN') %}
-                    <p><a class="linkBlue" href="{{ path('pp_blog_homepage')}}">{{ 'header.nav.blog'|trans }}</a></p>
-                    {% endif %}
-                </div>
-            </div>
-        </header>
 
             {% block body %}
             {% endblock %}

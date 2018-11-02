@@ -4,7 +4,8 @@
     --mygray: #F2F2F2;
 }
 body {
-    background-color: #F2F2F2;
+    background-image: url("../img/ORSJP90.jpg");
+    background-size: 125%;
 }
 
 .container {
@@ -66,17 +67,17 @@ icon {
 }
 
 .lineNight {
-    border-bottom: #0C1B31 1.5px solid;
+    border-bottom: rgb(15, 50, 60) 1.5px solid;
     border-top: #F2F2F2 1px solid;
 }
 
 .lineGrey {
     border-bottom: white 1.5px solid;
-    border-top: #0C1B31 1px solid
+    border-top: rgb(15, 50, 60) 1px solid
 }
 
 .mygrey .resumeTitle{
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
 }
 
 .night .resumeTitle{
@@ -104,7 +105,7 @@ icon {
 
 button {
     border: 0px;
-    background-color: #F2F2F2;
+    background-color: rgb(1, 12, 15);
 }
 
 .language {
@@ -115,7 +116,7 @@ button {
 
 .iconBlue {
     height: 30px;
-    fill:#0C1B31;
+    fill:rgb(15, 50, 60);
 }
 
 .iconWhite {

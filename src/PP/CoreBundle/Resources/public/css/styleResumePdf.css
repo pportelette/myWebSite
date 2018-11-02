@@ -50,7 +50,7 @@ p {
 }
 
 .sections {
-    background-color: #0C1B31;
+    background-color: rgb(15, 50, 60);
 }
 
 .displayInline{
@@ -154,7 +154,7 @@ a, a:hover{
     color: #D45440;
 }
 .linkBlue {
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
 }
 
 .hilight:focus {
@@ -174,23 +174,23 @@ a, a:hover{
 }
 
 .logo {
-    border: #0C1B31 2px solid;
+    border: rgb(15, 50, 60) 2px solid;
     border-radius: 50%;
     height: 40px;
 }
 
 .mygrey {
     background-color: #F2F2F2;
-    color: #0C1B31;
-    border-left: #0C1B31 1.5px solid;
-    border-top: #0C1B31 1.5px solid;
-    border-bottom: #0C1B31 1.5px solid;
+    color: rgb(15, 50, 60);
+    border-left: rgb(15, 50, 60) 1.5px solid;
+    border-top: rgb(15, 50, 60) 1.5px solid;
+    border-bottom: rgb(15, 50, 60) 1.5px solid;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .night {
-    background-color: #0C1B31;
+    background-color: rgb(15, 50, 60);
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -205,7 +205,7 @@ a, a:hover{
 }
 
 .fontNight {
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
 }
 
 .premierplan {
@@ -271,17 +271,17 @@ div {
 }
 
 .lineNight {
-    border-bottom: #0C1B31 1.5px solid;
+    border-bottom: rgb(15, 50, 60) 1.5px solid;
     border-top: #F2F2F2 1px solid;
 }
 
 .lineGrey {
     border-bottom: white 1.5px solid;
-    border-top: #0C1B31 1px solid
+    border-top: rgb(15, 50, 60) 1px solid
 }
 
 .mygrey .resumeTitle{
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
 }
 
 .night .resumeTitle{

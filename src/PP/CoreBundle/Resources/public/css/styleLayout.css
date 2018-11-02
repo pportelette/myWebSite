@@ -123,16 +123,6 @@ header, footer{
     padding-right: 40px;
 }
 
-header {
-    border-bottom: rgb(15, 50, 60) 2px solid;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-footer {
-    border-top: #0C1B31 2px solid;
-}
-
 a, a:hover{
     text-decoration: none;
 }
@@ -159,7 +149,7 @@ a, a:hover{
     fill: #D45440;
 }
 .linkBlue {
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
 }
 
 .hilight:focus {
@@ -167,7 +157,7 @@ a, a:hover{
 }
 
 .form-control {
-    border: #0C1B31 1px solid;
+    border: rgb(15, 50, 60)1 1px solid;
     border-radius: 1px;
     margin-bottom: 15px;
 }
@@ -190,14 +180,14 @@ a, a:hover{
 }
 
 .logo {
-    border: #0C1B31 1px solid;
+    border: rgb(15, 50, 60) 1px solid;
     border-radius: 50%;
     height: 40px;
 }
 
 .mygrey {
     background-color: #F2F2F2;
-    color: #0C1B31;
+    color: rgb(15, 50, 60);
     border-left: #0C1B31 1.5px solid;
     border-top: #0C1B31 1.5px solid;
     border-bottom: #0C1B31 1.5px solid;
@@ -206,7 +196,7 @@ a, a:hover{
 }
 
 .night {
-    background-color: #0C1B31;
+    background-color: rgb(15, 50, 60);
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
