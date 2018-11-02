@@ -124,7 +124,7 @@ header, footer{
 }
 
 header {
-    border-bottom: #0C1B31 2px solid;
+    border-bottom: rgb(15, 50, 60) 2px solid;
     padding-bottom: 5px;
     padding-top: 5px;
 }

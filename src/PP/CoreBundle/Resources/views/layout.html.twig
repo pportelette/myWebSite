@@ -9,9 +9,9 @@
         {% endblock %}
     </head>
     <body>
-        <header class="displayInline column">
+        <header class="displayInline column navbar-fixed-top" style="display:none">
             <div class="displayInline verticalCenter spaceBetween">
-                <a href="{{ path('pp_core_homepage')}}" class="col-md-2">
+                <a href="{{ path('pp_core_homepage')}}" class="col-md-4">
                     <div class="displayInline verticalCenter linkBlue">
                         <img class="logo" src="{{ asset('bundles/ppcore/img/Logo2.png') }}" alt="Logo PP" id="logo" />
                         <h4 class="smallMarginLeft">{{ 'site.name'|trans }}</h4>
@@ -28,16 +28,10 @@
                 </div>
             </div>
         </header>
-        <div class="container">
+
             {% block body %}
             {% endblock %}
-        </div>
-        <footer>
-            <div class="displayInline horizontalCenter verticalCenter paddingBottom paddingTop">
-                <a href="{{ path('pp_core_homepage')}}"><img class="logo" src="{{ asset('bundles/ppcore/img/Logo2.png') }}" alt="Logo PP"/></a>
-                <p class="marginLeft">Designed by <a class="linkBlue" href="http://www.lisiyuan-portfolio.com">Emeline</a></p>
-            </div>
-        </footer>
+
 
         <script src="{{ asset('bundles/ppcore/js/jquery-3.3.1.min.js') }}"></script>
         <script src="{{ asset('bundles/ppcore/js/bootstrap.min.js') }}"></script>

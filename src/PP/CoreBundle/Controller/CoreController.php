@@ -18,9 +18,35 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 class CoreController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        return $this->render('@PPCore/Core/index.html.twig');
+        $message = new Message();
+        $form= $this->get('form.factory')->create(MessageType::class, $message);
+
+        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($message);
+            //$em->flush();
+
+            $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
+                ->setUsername('pierre.portelett@free.fr')
+                ->setPassword('lisisi.85')
+            ;
+            $mail = \Swift_Message::newInstance()
+                ->setFrom(array($message->getEmail() => "myWebSite"))
+                ->setTo('pierre.portelette@free.fr')
+                ->setCharset('utf-8')
+                ->setContentType('text/html')
+                ->setBody($message->getBody());
+            
+            $mailer = new \Swift_Mailer($transport);
+            $mailer->send($mail);
+            
+            return $this->redirectToRoute('pp_core_homepage');
+        }
+        return $this->render('@PPCore/Core/index.html.twig', array(
+            'form'=>$form->createView()
+        ));
     }
 
     public function resumeAction(Request $request) {

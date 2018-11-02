@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleResume.css') }}">
 {% endblock %}
 {% block body %}
+<div class="container">
 <div class="photoResume premierplan">
-        <img class="widthSized" style="border-radius :50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite.jpg') }}" alt="image1"/>
-    </div>
+    <img class="widthSized" style="border-radius :50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite.jpg') }}" alt="image1"/>
+</div>
 <div class="row displayInline">
     <div class="col-md-6 displayInline horizontalLeft">
         <form method="POST" class="col-md-2 displayInline column verticalCenter">
@@ -266,5 +267,6 @@
             </div>
         </div>
     </section>
+</div>
 </div>
 {% endblock %}

@@ -5,16 +5,19 @@
 }
 
 body{
-    background-color: #0C1B31;
+    background-color: rgb(15, 50, 60);
 }
 
-.container{
+.mainSection {
+    background-image: url("../img/ORSJP90.jpg");
+    background-size: 125%;
     color: white;
+    padding-top: 20px;
+    min-height: 100%;
 }
 
 .deco {
     background-color: #D45440;
-    
 }
 
 .decoWhite {
@@ -26,13 +29,10 @@ body{
     z-index: 1;
 }
 
-.element:nth-child(1)
-{
-    height: 45%;
-}
-.element:nth-child(2)
-{
-    height: 55%;
+.sideNav {
+    position: fixed;
+    right: 0px;
+    top: 60px;
 }
 
 .title {
@@ -44,10 +44,6 @@ body{
     word-wrap: nowrap;
 }
 
-icon {
-    height: 200px;
-}
-
 .iconBlue {
     height: 40px;
     fill:#0C1B31;
@@ -57,4 +53,38 @@ icon {
     height: 40px;
     fill:white;
 }
+.col-md-6, .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.element {
+    background-color: rgba(95, 137, 148, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 0px;
+    background-color: #F2F2F2;
+}
+
+textarea{
+    min-height: 200px;
+}
+
+button {
+    width: 50%;
+}
+
+.btn-default:hover {
+    background-color: #D45440;
+}
+
+.btn-default {
+    border-radius: 0px;
+}
+
+
 

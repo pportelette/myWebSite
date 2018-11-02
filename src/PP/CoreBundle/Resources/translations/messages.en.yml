@@ -1,6 +1,6 @@
 #Layout
 site:
-  name: Hexagone
+  name: Pierre PORTELETTE
 header:
   nav:
     home: Home
@@ -15,10 +15,8 @@ about:
     body: | 
       Hi, welcome to my website !
       I am Pierre, self-taught web developer based in Shanghai.
-      Engineer in physics, I evolved in photovoltaic industry and 
-      quickly became found of web technologies.
-      Through this website you will find my realizations, blog articles
-      and my resume.
+      Engineer in physics, I evolved in photovoltaic industry and quickly became found of web technologies.
+      Through this website you will find my realizations, blog articles and my resume.
       Please feel free to send me a message !
   work:
     title: ABOUT WORK
