@@ -9,29 +9,33 @@ header:
     blog: Blog
 
 #About
+
 about:
+  title: Pierre PORTELETTE's homepage
   me:
     title: ABOUT ME
     body: | 
       Hi, welcome to my website !
-      I am Pierre, self-taught web developer based in Shanghai.
-      Engineer in physics, I evolved in photovoltaic industry and quickly became found of web technologies.
-      Through this website you will find my realizations, blog articles and my resume.
+      I am Pierre, engineer in photovolaics and self-taught web developer based in Shanghai.
+      I have been evolving in photovoltaic industry since 2009 and quickly became found of web technologies.
+      Through this website you will find my resume and soon my realizations and blog articles.
       Please feel free to send me a message !
   work:
     title: ABOUT WORK
     body: |
-      Through my work experiences, I often have been faced to issues such as sharing, centralization and remote access to information produced in the company.
+      Through my work experiences, I often have been faced to issues such as working at the same time on the same documents, or the difficulty to find and access remotely to information produced in the company.
       
-      I quickly turned and passionate about web applications that are particulary well suited to solve these kind of problems.
+      I quickly turned and passionate about web applications which, when combined with databases, are particulary well suited to solve these kind of problems.
 
 #Contact
-Phone: Phone
-Name*: Name*
-E-mail*: E-mail*
-Message*: Message*
-star: "* mandatory field"
-send_button: Send
+contact:
+  title: Contact
+  Phone: Phone
+  Name*: Name*
+  E-mail*: E-mail*
+  Message*: Message*
+  star: "* mandatory field"
+  send_button: Send
 
 #Resume
 age: years old

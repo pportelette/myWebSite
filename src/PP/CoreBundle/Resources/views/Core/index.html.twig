@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleCore.css') }}">
 {% endblock %}
 {% block body %}
-  <section class="col-md-9 mainSection">
+  <section class="col-xs-10 col-sm-9 mainSection">
     <div id="homePage">
-      <h3>Pierre PORTELETTE's Homepage</h3>
+      <h3>{{ 'about.title'| trans }}</h3>
       <div class="col-md-12 displayInline">
-        <div class="col-md-6 displayInline column horizontalRight element">
+        <div class="col-md-7 col-sm-12 displayInline column horizontalRight element">
           <h4 class="title"><strong>{{ 'about.me.title'| trans }}</strong></h4>
           <p class="marginTop marginBottom">{{ 'about.me.body'| trans | nl2br }}</p>
         </div>
@@ -18,7 +18,7 @@
       <div class="col-md-12 displayInline">
         <div class="col-md-4">
         </div>
-        <div class="col-md-6 displayInline column horizontalRight textRight element">
+        <div class="col-md-6 col-sm-12 displayInline column horizontalRight textRight element">
           <h4 class="title"><strong>{{ 'about.work.title'| trans }}</strong></h4>
           <p class="marginTop">{{ 'about.work.body'| trans | nl2br }}</p>
         </div>
@@ -26,39 +26,39 @@
     </div>
   </section>
 
-  <div class="col-md-3 displayInline column sideNav">
-    <div class="displayInline horizontalCenter verticalCenter marginBottom">
-        <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite.jpg') }}" alt="image1"/>
+  <div class="col-xs-2 col-sm-3 displayInline column sideNav">
+    <div class="displayInline horizontalCenter verticalCenter marginBottom hidden-xs hidden-sm">
+        <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite1.jpg') }}" alt="image1"/>
     </div>
     <div>
       <a class="linkWhite" href="{{ path('pp_core_contact')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+        <div class="col-md-4 col-sm-6 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="size40 glyphicon glyphicon-envelope" aria-hidden="true"></span>
           <p>{{ 'E-MAIL'| trans }}</p>
         </div>
       </a>
       <a class="linkWhite" href="{{ path('pp_core_resume')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+        <div class="col-md-4 col-sm-6 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="glyphicon size40 glyphicon-list-alt" aria-hidden="true"></span>
           <p>{{ 'CV'| trans }}</p>
         </div>
       </a>
       {% if is_granted('ROLE_ADMIN') %}
       <a class="linkWhite" href="http://localhost/myMegaPV/web/app_dev.php/register">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+        <div class="col-md-4 col-sm-6 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="glyphicon size40 glyphicon-object-align-bottom" aria-hidden="true"></span>
           <p>{{ 'DEMO'| trans }}</p>
         </div>
       </a>
       <a class="linkWhite" href="{{ path('pp_blog_homepage')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+        <div class="col-md-4 col-sm-6 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="size40 glyphicon glyphicon-th-list" aria-hidden="true"></span>
           <p>{{ 'BLOG'| trans }}</p>
         </div>
       </a>
       {% endif %}
       <a class="linkWhite" href="https://www.linkedin.com/in/pierre-portelette-1885a184">
-        <div class="col-md-4 displayInline column verticalCenter">
+        <div class="col-md-4 col-sm-6 displayInline column verticalCenter">
             <svg class="iconWhite marginTop" version="1.1" x="0px" y="0px" viewBox="0 0 66.9 66.6" style="enable-background:new 0 0 66.9 66.6;">
               <path d="M66.8,7.3c0-5.8-1.3-7.2-6.9-7.3c-17.7,0-35.3,0-53,0C1.4,0,0,1.4,0,6.8c0,17.7,0,35.3-0.1,53
                   c0,3.1,0.8,5.6,3.9,6.8c19.7,0,39.4,0,59,0c3.4-1.3,3.9-4,3.9-7.3C66.8,41.9,66.8,24.6,66.8,7.3z M15.5,55.6

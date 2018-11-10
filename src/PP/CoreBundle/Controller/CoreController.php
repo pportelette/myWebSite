@@ -74,18 +74,6 @@ class CoreController extends Controller
                 'items'=>$items
             ));
 
-            /*$this->get('knp_snappy.pdf')->generateFromHtml(
-                $html, 
-                "C:/wamp64/www/project/web/snappy/file.pdf", 
-                array(
-                    
-                ),
-                true
-            );
-            return $this->render('@PPCore/Core/resume.html.twig', array(
-                'user'=>$user,
-                'items'=>$items
-            ));*/
             return new PdfResponse(
                 $this->get('knp_snappy.pdf')->getOutputFromHtml($html), 'CV-Pierre Portelette.pdf'
             );

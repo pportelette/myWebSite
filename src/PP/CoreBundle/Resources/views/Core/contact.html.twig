@@ -7,9 +7,9 @@
 {% endblock %}
 
 {% block body %}
-    <section class="col-md-9 mainSection" style="padding-left: 50px">
+    <section class="col-xs-9 col-sm-9 mainSection">
     <div>
-        <h3>Contact</h3>
+        <h3>{{ 'contact.title'| trans }}</h3>
         <div class="col-md-2">
         </div>
         <div class="col-md-8 element floatCenter">
@@ -18,20 +18,20 @@
             {{ form_errors(form) }}
 
             <div class="col-md-12 displayInline column">
-                <div class="displayInline col-md-12">    
-                    <div class="smallMarginRight col-md-6">
+                <div class="col-xs-12">    
+                    <div class="col-sm-6 col-xs-12 first">
                     {{ form_errors(form.name) }}
-                        {{ form_widget(form.name, {'attr': {'class': '', 'placeholder': 'Name*' | trans}}) }}
+                        {{ form_widget(form.name, {'attr': {'class': '', 'placeholder': 'contact.Name*' | trans}}) }}
                     </div>
                     
-                    <div class="col-md-6">
+                    <div class="col-sm-6 col-xs-12 second">
                     {{ form_errors(form.phone) }}
-                        {{ form_widget(form.phone, {'attr': {'placeholder': 'Phone' | trans }}) }}
+                        {{ form_widget(form.phone, {'attr': {'placeholder': 'contact.Phone' | trans }}) }}
                     </div>
                 </div>
                 {{ form_errors(form.email) }}
                 <div class="col-md-12">
-                    {{ form_widget(form.email, {'attr': {'placeholder': 'E-mail*' | trans}}) }}
+                    {{ form_widget(form.email, {'attr': {'placeholder': 'contact.E-mail*' | trans}}) }}
                 </div>
 
                 {{ form_errors(form.body) }}
@@ -40,10 +40,10 @@
                 </div>
 
                 <div class="col-md-12 displayInline horizontalCenter">
-                    {{ form_widget(form.send, {'label': 'send_button' | trans, 'attr': {'class': 'smallMarginRight btn-default'}}) }}
+                    {{ form_widget(form.send, {'label': 'contact.send_button' | trans, 'attr': {'class': 'smallMarginRight btn-default'}}) }}
                 </div>
                 <div class="marginTop">
-                    <p>{{ 'star' | trans }}</p>
+                    <p>{{ 'contact.star' | trans }}</p>
                 </div>
             </div>
 
@@ -53,10 +53,10 @@
         </div>
     </div>
   </section>
-
-  <div class="col-md-3 displayInline column sideNav" style="height: 100%">
-    <div class="displayInline horizontalCenter verticalCenter marginBottom">
-        <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite.jpg') }}" alt="image1"/>
+    <div class="clearfix"></div>
+  <div class="col-xs-3 col-md-3 displayInline column sideNav">
+    <div class="displayInline horizontalCenter verticalCenter marginBottom hidden-sm hidden-xs">
+        <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite1.jpg') }}" alt="image1"/>
     </div>
     <div>
       <a class="linkWhite" href="{{ path('pp_core_homepage')}}">

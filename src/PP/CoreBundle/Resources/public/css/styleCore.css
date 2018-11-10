@@ -54,12 +54,12 @@ body{
     height: 40px;
     fill:white;
 }
-.col-md-6, .col-md-12 {
+.col-md-6, .col-md-12, .col-xs-12 {
     padding-left: 0px;
     padding-right: 0px;
 }
 .element {
-    background-color: rgba(95, 137, 148, 0);
+    background-color: rgba(95, 137, 148, 0.1);
     border-radius: 5px;
     padding: 10px;
     margin-top: 5px;
@@ -87,5 +87,25 @@ button {
     border-radius: 0px;
 }
 
+.first {
+    padding-right: 10px;
+}
+
+.second {
+    padding-left: 10px;
+}
+
+@media all and (max-width: 800px) {
+    .mainSection {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .first {
+        padding-right: 0px;
+    }
+    .second {
+        padding-left: 0px;
+    }
+}
 
 

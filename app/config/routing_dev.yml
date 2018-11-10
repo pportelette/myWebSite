@@ -17,3 +17,7 @@ pp_core_translation:
   path:     /traduction/{name}
   defaults:
     _controller: PPCoreBundle:Core:translation
+
+coresphere_console:
+    resource: .
+    type: extra

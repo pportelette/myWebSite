@@ -103,7 +103,7 @@
                 {% endif %}
             </div>
             {% set desc = professional.description %}
-            <p class="">{{ desc | trans | nl2br}}</p>
+            <p class="">{{ desc | trans | raw}}</p>
         </div>
     {% endfor %}
     </section>
