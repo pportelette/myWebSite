@@ -51,7 +51,7 @@
                             <p class="companyName displayInline"> {{ professional.companyName }} </p>
                             <p class="displayInline"> | {{ professional.city }}</p>
                         </div>
-                        <p class="" style="text-align: justify">{{ professional.description|nl2br }}</p>
+                        <p class="" style="text-align: justify">{{ professional.description|raw }}</p>
                     </div>
                 {% endfor %}
                 </section>
