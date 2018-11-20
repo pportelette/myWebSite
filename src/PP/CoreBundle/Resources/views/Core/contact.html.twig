@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-    <section class="col-xs-10 col-sm-9 mainSection">
+    <section class="col-xs-10 col-md-9 mainSection">
     
     <div>
         <h3>{{ 'contact.title'| trans }}</h3>
@@ -27,12 +27,12 @@
 
             <div class="col-md-12 displayInline column">
                 <div class="col-xs-12">    
-                    <div class="col-sm-6 col-xs-12 first">
+                    <div class="col-md-6 col-xs-12 first">
                     {{ form_errors(form.name) }}
                         {{ form_widget(form.name, {'attr': {'class': '', 'placeholder': 'contact.Name*' | trans}}) }}
                     </div>
                     
-                    <div class="col-sm-6 col-xs-12 second">
+                    <div class="col-md-6 col-xs-12 second">
                     {{ form_errors(form.phone) }}
                         {{ form_widget(form.phone, {'attr': {'placeholder': 'contact.Phone' | trans }}) }}
                     </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
   </section>
-    <div class="clearfix"></div>
+
   <div class="col-xs-2 col-md-3 displayInline column sideNav">
     <div class="displayInline horizontalCenter verticalCenter marginBottom hidden-sm hidden-xs">
         <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite1.jpg') }}" alt="image1"/>
