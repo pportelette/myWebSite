@@ -83,7 +83,7 @@ class CoreController extends Controller
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($message);
-            //$em->flush();
+            $em->flush();
             /*
             $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
                 ->setUsername('pierre.portelett@free.fr')
@@ -99,7 +99,7 @@ class CoreController extends Controller
             $mailer = new \Swift_Mailer($transport);
             $mailer->send($mail);
             */
-            $request->getSession()->getFlashBag()->add('info', 'Thank you for you message, I will reply soon !.');
+            $request->getSession()->getFlashBag()->add('info', 'Thank you for you message, I will reply soon !');
             return $this->redirectToRoute('pp_core_contact');
         }
         return $this->render('@PPCore/Core/contact.html.twig', array(

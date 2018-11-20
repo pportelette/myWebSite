@@ -23,6 +23,13 @@ class Message
     private $id;
 
     /**
+     * @var \Datetime
+     *
+     * @ORM\Column(name="date", type="datetime")
+     */
+    private $date;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=100)
@@ -56,6 +63,10 @@ class Message
      */
     private $body;
 
+    public function __construct()
+    {
+        $this->date = new \Datetime();
+    }
 
     /**
      * Get id.
