@@ -8,8 +8,16 @@
 
 {% block body %}
     <section class="col-xs-9 col-sm-9 mainSection">
+    
     <div>
         <h3>{{ 'contact.title'| trans }}</h3>
+            
+        {% for message in app.session.flashbag.get('info') %}
+        <div class="element">
+                <p class="title">Message flash : {{ message }}</p>    
+        </div>
+        {% endfor %}
+        
         <div class="col-md-2">
         </div>
         <div class="col-md-8 element floatCenter">

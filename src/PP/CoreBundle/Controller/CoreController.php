@@ -20,33 +20,8 @@ class CoreController extends Controller
 {
     public function indexAction(Request $request)
     {
-        $message = new Message();
-        $form= $this->get('form.factory')->create(MessageType::class, $message);
 
-        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($message);
-            //$em->flush();
-
-            $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
-                ->setUsername('pierre.portelett@free.fr')
-                ->setPassword('lisisi.85')
-            ;
-            $mail = \Swift_Message::newInstance()
-                ->setFrom(array($message->getEmail() => "myWebSite"))
-                ->setTo('pierre.portelette@free.fr')
-                ->setCharset('utf-8')
-                ->setContentType('text/html')
-                ->setBody($message->getBody());
-            
-            $mailer = new \Swift_Mailer($transport);
-            $mailer->send($mail);
-            
-            return $this->redirectToRoute('pp_core_homepage');
-        }
-        return $this->render('@PPCore/Core/index.html.twig', array(
-            'form'=>$form->createView()
-        ));
+        return $this->render('@PPCore/Core/index.html.twig');
     }
 
     public function resumeAction(Request $request) {
@@ -109,7 +84,7 @@ class CoreController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($message);
             //$em->flush();
-
+            /*
             $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
                 ->setUsername('pierre.portelett@free.fr')
                 ->setPassword('lisisi.85')
@@ -123,8 +98,9 @@ class CoreController extends Controller
             
             $mailer = new \Swift_Mailer($transport);
             $mailer->send($mail);
-            
-            return $this->redirectToRoute('pp_core_homepage');
+            */
+            $request->getSession()->getFlashBag()->add('info', 'Thank you for you message, I will reply soon !.');
+            return $this->redirectToRoute('pp_core_contact');
         }
         return $this->render('@PPCore/Core/contact.html.twig', array(
           'form' => $form->createView(),
