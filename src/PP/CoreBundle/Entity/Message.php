@@ -51,7 +51,6 @@ class Message
      *
      * @ORM\Column(name="phone", type="string", length=50, nullable=true)
      * @Assert\Length(max=100)
-     * @Assert\Regex(pattern="[+()\s\d]", match=true, message="The phone number entered is not valid")
      */
     private $phone;
 
@@ -172,5 +171,29 @@ class Message
     public function getBody()
     {
         return $this->body;
+    }
+
+    /**
+     * Set date.
+     *
+     * @param \DateTime $date
+     *
+     * @return Message
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date.
+     *
+     * @return \DateTime
+     */
+    public function getDate()
+    {
+        return $this->date;
     }
 }

@@ -13,3 +13,7 @@ pp_core_resume:
 pp_core_contact:
     path:     /contact
     defaults: { _controller: PPCoreBundle:Core:contact }
+
+pp_core_messages:
+    path:     /messages
+    defaults: { _controller: PPCoreBundle:Core:messages }

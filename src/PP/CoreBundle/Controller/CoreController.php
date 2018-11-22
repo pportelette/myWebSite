@@ -87,7 +87,7 @@ class CoreController extends Controller
             /*
             $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
                 ->setUsername('pierre.portelett@free.fr')
-                ->setPassword('lisisi.85')
+                ->setPassword('')
             ;
             $mail = \Swift_Message::newInstance()
                 ->setFrom(array($message->getEmail() => "myWebSite"))
@@ -104,6 +104,25 @@ class CoreController extends Controller
         }
         return $this->render('@PPCore/Core/contact.html.twig', array(
           'form' => $form->createView(),
+        ));
+    }
+
+    /**
+     * @Security("has_role('ROLE_ADMIN')")
+     */
+    public function messagesAction() {
+        $em = $this->getDoctrine()->getManager();
+
+        $messageRepository = $em->getRepository('PPCoreBundle:Message');
+        $messages = $messageRepository->findBy(
+            array(), // Critere
+            array('date' => 'desc'),        // Tri  
+            null,                              // Limite  
+            null 
+        );
+
+        return $this->render('@PPCore/Core/messages.html.twig', array(
+            'messages' => $messages
         ));
     }
 }
