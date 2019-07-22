@@ -17,3 +17,7 @@ pp_core_contact:
 pp_core_messages:
     path:     /messages
     defaults: { _controller: PPCoreBundle:Core:messages }
+
+pp_core_portfolio:
+    path:     /portfolio
+    defaults: { _controller: PPCoreBundle:Core:portfolio }

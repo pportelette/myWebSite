@@ -1,0 +1,82 @@
+{% extends "@PPCore//layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Blog{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleCore.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/ppblog/css/styleBlog.css') }}">
+{% endblock %}
+{% block body %}
+    <section class="col-xs-10 col-md-9 mainSection">
+        <div id="homePage">
+            <h3>{{ 'portfolio.title'| trans }}</h3>
+            <div class="col-md-12 displayInline">
+                <div class="col-sm-12">
+                    <a href="http://project1.pierreportelette.com" target="_blank">
+                        <div class="displayInline marginBottom element">
+                            <div class="col-md- apercuImg hidden-xs bordered">
+                                <img class="heightSized" src="{{ asset('bundles/ppcore/img/project1-icon.png') }}" alt="project1"/>
+                            </div>
+                            <div class="col-md apercuTxt">
+                                <h3>{{ 'portfolio.project1.title'| trans}}</h3>
+                                <div class="article">
+                                    <div class="">{{ 'portfolio.project1.desc'| trans }}</div>
+                                </div>              
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="col-xs-2 col-md-3 displayInline column sideNav">
+        <div class="displayInline horizontalCenter verticalCenter marginBottom hidden-xs hidden-sm">
+            <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite1.jpg') }}" alt="image1"/>
+        </div>
+        <div>
+            <a class="linkWhite" href="{{ path('pp_core_homepage')}}">
+                <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+                <span class="size40 glyphicon glyphicon-home" aria-hidden="true"></span>
+                <p>{{ 'HOME'| trans }}</p>
+                </div>
+            </a>
+            <a class="linkWhite" href="{{ path('pp_core_contact')}}">
+                <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+                <span class="size40 glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <p>{{ 'E-MAIL'| trans }}</p>
+                </div>
+            </a>
+            <a class="linkWhite" href="{{ path('pp_core_resume')}}">
+                <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+                <span class="glyphicon size40 glyphicon-list-alt" aria-hidden="true"></span>
+                <p>{{ 'CV'| trans }}</p>
+                </div>
+            </a>
+            {% if is_granted('ROLE_ADMIN') %}
+            <a class="linkWhite" href="{{ path('pp_blog_homepage')}}">
+                <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
+                    <span class="size40 glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                    <p>{{ 'BLOG'| trans }}</p>
+                </div>
+            </a>
+            {% endif %}
+            <a class="linkWhite" href="https://www.linkedin.com/in/pierre-portelette-1885a184">
+                <div class="col-md-4 displayInline column verticalCenter">
+                    <svg class="iconWhite marginTop" version="1.1" x="0px" y="0px" viewBox="0 0 66.9 66.6" style="enable-background:new 0 0 66.9 66.6;">
+                    <path d="M66.8,7.3c0-5.8-1.3-7.2-6.9-7.3c-17.7,0-35.3,0-53,0C1.4,0,0,1.4,0,6.8c0,17.7,0,35.3-0.1,53
+                        c0,3.1,0.8,5.6,3.9,6.8c19.7,0,39.4,0,59,0c3.4-1.3,3.9-4,3.9-7.3C66.8,41.9,66.8,24.6,66.8,7.3z M15.5,55.6
+                        c-2.1-0.1-5.4,1.7-5.3-2.8c0.1-8.1,0-16.3,0-24.4c0-4.1,3.1-2.6,5-2.6s5.1-1.5,5,2.6c0,4.2,0,8.3,0,12.5c0,4-0.1,8,0,12
+                        C20.4,56.9,17.4,55.7,15.5,55.6z M15,21.5c-3.1-0.3-5.3-1.8-5.2-5.2c0.1-3.5,2.2-5,5.5-5c3.5,0,5.8,1.8,5.6,5.4
+                        C20.7,20.1,18.3,21.4,15,21.5z M56.6,53.1c0,4.5-3.6,2.2-5.6,2.5c-1.9,0.3-4.6,1.1-4.4-2.7c0.2-4.3,0.1-8.7,0-13
+                        c-0.1-3.5-0.7-7.1-5.3-6.9c-4.1,0.2-5.4,3.2-5.3,7c0.1,3.3,0.1,6.7,0,10c-0.1,1.8,1.1,4.6-1,5.3c-2.4,0.8-5.3,0.5-7.9,0.1
+                        c-1.8-0.2-1-2.2-1-3.4c-0.1-7.5-0.1-15,0-22.5c0-1.6-0.9-4.4,2.1-3.9c2.8,0.5,7.2-2.8,8.3,3.4c4-4.5,8.6-4.9,13.3-3.3
+                        c4.6,1.6,6.5,5.6,6.7,10.2C56.7,41.7,56.7,47.4,56.6,53.1z"/>
+                    </svg>
+                    <p>{{ 'LinkedIn'| trans }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+{% endblock %}
+

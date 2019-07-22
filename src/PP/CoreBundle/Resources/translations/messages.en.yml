@@ -7,6 +7,7 @@ header:
     contact: Contact
     cv: CV
     blog: Blog
+    portfolio: Portfolio
 
 #About
 
@@ -17,7 +18,7 @@ about:
     body: | 
       Hi, welcome to my website !
       I am Pierre, engineer in photovolaics and self-taught web developer based in Shanghai.
-      I have been evolving in photovoltaic industry since 2009 and quickly became found of web technologies.
+      I have been evolving in photovoltaic industry since 2009 and quickly became fond of web technologies.
       Through this website you will find my resume and soon my realizations and blog articles.
       Please feel free to send me a message !
   work:
@@ -55,3 +56,10 @@ title:
 #Blog
 blog:
   title: Pierre's Blog
+
+#Profolio
+portfolio:
+  title: My realizations
+  project1:
+    title: Web integration
+    desc: For this project, I integrated a model realized by a designer into html and css.

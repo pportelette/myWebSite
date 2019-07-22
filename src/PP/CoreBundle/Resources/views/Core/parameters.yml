@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 4w7fn.myd.infomaniak.com
+    database_port: null
+    database_name: 4w7fn_mywebsite
+    database_user: 4w7fn_portelette
+    database_password: 22.Labastide
+    mailer_transport: smtp
+    mailer_host: mail.infomaniak.ch
+    mailer_user: webmaster@pierreportelette.com
+    mailer_password: null
+    secret: 215d5cdf24c4499d4b6b95219f43971c41ffb92e

@@ -39,6 +39,7 @@ twig:
     strict_variables: '%kernel.debug%'
     form_themes:
         - 'bootstrap_3_layout.html.twig'
+        - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
 
 # Doctrine Configuration
 doctrine:
@@ -87,3 +88,14 @@ stof_doctrine_extensions:
     orm:
         default:
             sluggable: true
+
+fos_ck_editor:
+    default_config: default
+    configs:
+        default:
+            extraPlugins: "codesnippet"
+    input_sync: true
+    plugins:
+        codesnippet:
+            path:     '/bundles/fosckeditor/plugins/codesnippet/'
+            filename: 'plugin.js'

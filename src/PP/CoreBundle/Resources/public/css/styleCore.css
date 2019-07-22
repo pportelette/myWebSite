@@ -10,11 +10,13 @@ body{
 
 .mainSection {
     background-image: url("../img/ORSJP90.jpg");
-    background-size: 125%;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     padding-top: 20px;
     min-height: 100%;
-    padding-left: 50px
+    padding-left: 50px;
+    padding-right: 50px
 }
 
 .deco {

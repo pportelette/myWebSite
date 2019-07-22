@@ -62,6 +62,13 @@ class Message
      */
     private $body;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="robot", type="boolean")
+     */
+    private $robot;
+
     public function __construct()
     {
         $this->date = new \Datetime();
@@ -195,5 +202,29 @@ class Message
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set robot.
+     *
+     * @param bool $robot
+     *
+     * @return Message
+     */
+    public function setRobot($robot)
+    {
+        $this->robot = $robot;
+
+        return $this;
+    }
+
+    /**
+     * Get robot.
+     *
+     * @return bool
+     */
+    public function getRobot()
+    {
+        return $this->robot;
     }
 }
