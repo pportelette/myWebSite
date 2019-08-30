@@ -63,9 +63,10 @@ class Message
     private $body;
 
     /**
-     * @var boolean
+     * @var string
      *
-     * @ORM\Column(name="robot", type="boolean")
+     * @ORM\Column(name="robot", type="text")
+     * @Assert\Blank()
      */
     private $robot;
 

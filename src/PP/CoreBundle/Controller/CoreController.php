@@ -105,11 +105,10 @@ class CoreController extends Controller
         $form= $this->get('form.factory')->create(MessageType::class, $message);
 
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
-            if ($message->getRobot() === false) {
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($message);
             $em->flush();
-            }
             /*
             $transport = (new \Swift_SmtpTransport('smtp.free.fr', 2525))
                 ->setUsername('pierre.portelett@free.fr')

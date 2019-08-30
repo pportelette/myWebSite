@@ -48,6 +48,9 @@
         margin-left: 5%;
         width:90%;
     }
+    .flashMessage {
+        margin-left: 50%;
+    }
     .inline {
         flex-direction: column;
     }

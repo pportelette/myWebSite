@@ -147,15 +147,19 @@ nav li {
     display: flex;
     align-items: center;
 }
+ul a > .active {
+    color: var(--dimGray);
+    text-decoration: underline;
+    text-decoration-color: var(--myGreen);
+}
 nav li:hover {
     background-color: var(--myBlue);
     color: var(--whity);
     cursor: pointer;
 }
-ul a > .active {
-    color: var(--dimGray);
-    text-decoration: underline;
-    text-decoration-color: var(--myGreen);
+.flashMessage {
+    margin-left: 10%;
+    color: var(--myGreen);
 }
 /***Backgrounds**/
 .blueBkg {

@@ -22,7 +22,7 @@ class MessageType extends AbstractType
             ->add('email',      TextType::class)
             ->add('phone',      TextType::class, array('required' => false))
             ->add('body',       TextareaType::class)
-            ->add('robot',      CheckboxType::class, array('required' => false))
+            ->add('robot',      TextType::class, array('required' => false))
             ->add('send',       SubmitType::class)
         ;
 

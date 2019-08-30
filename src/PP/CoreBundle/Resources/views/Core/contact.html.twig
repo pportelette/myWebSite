@@ -24,12 +24,10 @@
 
 	<section id="contact">
 		<h2 class="pageTitle">{{ 'contact.title'| trans }}</h2>
+		<div class="elements">
 		{% for message in app.session.flashbag.get('info') %}
-        <div class="element">
-                <p class="title">Message flash : {{ message }}</p>    
-        </div>
+            <p class="flashMessage">{{ message }}</p>    
         {% endfor %}
-		<div class="elements">              
 			<div class="inline">
 				{{ form_start(form, {'attr': {'class': 'contactForm whityBkg'}}) }}
 
@@ -47,8 +45,8 @@
 					{{ form_errors(form.body) }}
 					{{ form_widget(form.body, {'attr': {'placeholder': 'Message*' | trans}}) }}
 
-					<div style="display: none">
-						{{ form_widget(form.robot) }}
+					<div style="visibility: hidden; height: 0;">
+						{{ form_widget(form.robot, {'attr': {'class': '', 'placeholder': 'Firstname*' | trans}}) }}
 					</div>
 
 					{{ form_widget(form.send, {'label': 'contact.send_button' | trans, 'attr': {'class': 'btn'}}) }}
