@@ -152,7 +152,7 @@ nav li:hover {
     color: var(--whity);
     cursor: pointer;
 }
-ul > .active {
+ul a > .active {
     color: var(--dimGray);
     text-decoration: underline;
     text-decoration-color: var(--myGreen);

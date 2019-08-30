@@ -20,16 +20,17 @@ about:
       
       I am Pierre, web developer based in Shanghai and formerly engineer in photovoltaics.
       
-      I have been evolving in photovoltaic industry since 2009 and quickly became fond of web technologies.
+      I am passionate about playing music and I do my best to learn and speak Chinese !
+
       Through this website you will find my resume and my realizations.
       
       Please feel free to send me a message !
   work:
     title: ABOUT WORK
     body: |
-      Through my work experiences, I often have been faced to issues such as working at the same time on the same documents, or the difficulty to find and access remotely to information produced in the company.
+      I have been evolving in photovoltaic industry since 2009 and through my work experiences, I often have been faced to issues such as working at the same time on the same documents, or the difficulty to find and access remotely to information produced in the company.
       
-      I quickly turned and passionate about web applications which, when combined with databases, are particulary well suited to solve these kind of problems.
+      I quickly became passionate about web technologies which, when combined with databases, are particularly well suited to solve these kind of problems.
 
       That's why I decided to retrain to web development in order to combine my both interests in web development and information systems.
 
@@ -49,14 +50,14 @@ title:
   work: WORK
   internship: INTERNSHIPS
   education: EDUCATION
-  languages: LANGUAGES
-  computer: COMPUTER SKILLS
+  languages: Languages
+  computer: Computer Skills
   other: OTHER ACTIVITIES
-"French:": Français :
-"English:": Anglais :
-"Chinese:": Chinois :
-"Japanese:": Japonais :
-"Web Development:": Dévelopmment web :
+"French:": 
+"English:": 
+"Chinese:": 
+"Japanese:": 
+"Web Development:": 
 
 #Blog
 blog:
@@ -64,12 +65,19 @@ blog:
 
 #Profolio
 portfolio:
-  title: My realizations
+  title: My portfolio
   project1:
     title: | 
-      Training project 1: Web integration
-    desc: This project is a single page website realized as a part of my training. The objective was to integrate a model using exlusively html and css. All icons and effects are implemented in css and no framework css such as Botstrap has been used. The website is fully responsive.
+      Training project 1: Web The WebAgency
+    desc: Integrate a model using exclusively html and css.
   project2:
     title: |
-      Training project 2: Website with CMS
-    desc: The second project of my training was create a website with WordPress. A child theme has been created and the design has been customized by myself. For this project, the SEO has been optimized.
+      Training project 2: Noumea Tourisme
+    desc: Create a website with WordPress by customizing an existing theme and optimizing the SEO.
+  project3:
+    title: |
+      Training project 3: BookingBikes
+    desc: As the title says it is a booking bikes application using API and javascript.
+  omegapv:
+    title: PV assets management tool
+    desc: Coming soon !

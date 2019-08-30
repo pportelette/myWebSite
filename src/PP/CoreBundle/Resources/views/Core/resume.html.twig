@@ -12,8 +12,8 @@
         <a href="{{ path('pp_core_homepage')}}"><h1>Pierre<span class="blueTxt">PORTELETTE</span></h1></a>
         <nav>
             <ul>
-                <a href="{{ path('pp_core_homepage')}}"><li class="active">About</li></a>
-                <a href="{{ path('pp_core_resume')}}"><li>Resume</li></a>
+                <a href="{{ path('pp_core_homepage')}}"><li>About</li></a>
+                <a href="{{ path('pp_core_resume')}}"><li class="active">Resume</li></a>
                 <a href="{{ path('pp_core_portfolio')}}"><li>Portfolio</li></a>
                 <a href="{{ path('pp_core_contact')}}"><li>Contact</li></a>
             </ul>
@@ -37,7 +37,7 @@
             <h3 class="cvTitle">{{ 'title.work'|trans }}</h3>
             {# PROFESSIONALS #}
             {% for professional in items.professionals %}
-                <h4 class="positionTitle"{{ professional.position }}</h4>
+                <h4 class="positionTitle">{{ professional.position }}</h4>
                 {% set ville = professional.city %}
                 {% if professional.endDate > professional.startDate %}    
                 <p class="positionSubTitle">{{ professional.startDate|date('m/Y') }} - {{ professional.endDate|date('m/Y') }} | <strong class="blueTxt">{{ professional.companyName }}</strong> | {{ ville | trans }}</p>
