@@ -117,6 +117,7 @@ class CoreController extends Controller
             $mail = \Swift_Message::newInstance()
                 ->setFrom(array($message->getEmail() => "myWebSite"))
                 ->setTo('pierre.portelette@free.fr')
+                ->setSubject('Nouveau message de' . $message->getName())
                 ->setCharset('utf-8')
                 ->setContentType('text/html')
                 ->setBody($message->getBody());

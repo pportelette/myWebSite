@@ -65,7 +65,7 @@ class Message
     /**
      * @var string
      *
-     * @ORM\Column(name="robot", type="text")
+     * @ORM\Column(name="robot", type="text", nullable=true)
      * @Assert\Blank()
      */
     private $robot;
