@@ -41,13 +41,13 @@
           <p>{{ 'CV'| trans }}</p>
         </div>
       </a>
-      {% if is_granted('ROLE_ADMIN') %}
-      <a class="linkWhite" href="http://localhost/myMegaPV/web/app_dev.php/register">
+      <a class="linkWhite" href="{{ path('pp_core_portfolio')}}">
         <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="glyphicon size40 glyphicon-object-align-bottom" aria-hidden="true"></span>
-          <p>{{ 'DEMO'| trans }}</p>
+          <p>{{ 'PORTFOLIO'| trans }}</p>
         </div>
       </a>
+      {% if is_granted('ROLE_ADMIN') %}
       <a class="linkWhite" href="{{ path('pp_blog_homepage')}}">
         <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
           <span class="size40 glyphicon glyphicon-th-list" aria-hidden="true"></span>

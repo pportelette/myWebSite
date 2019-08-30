@@ -12,21 +12,19 @@
             <div class="col-md-12 displayInline">
                 <div class="col-sm-12">
                     {% for article in articles %}
-                    <div class="displayInline marginBottom element" style="height: 290px">
-                        <div class="col-md-5" style="height: 80%">
-                            <img class="heightSized apercuImg" src="{{ asset('bundles/ppcore/img/photo2.jpg') }}" alt="image1"/>
-                        </div>
-                        <div class="col-md-7 apercuTxt premierPlan" style="height: 80%; color: black;">
-                            <a href="{{ path('pp_blog_article', {'slug': article.slug}) }}">
+                    <a href="{{ path('pp_blog_article', {'slug': article.slug}) }}">
+                        <div class="displayInline marginBottom element">
+                            <div class="apercuImg hidden-xs">
+                                <img class="heightSized" src="{{ asset('bundles/ppcore/img/891-carre.jpg') }}" alt="image1"/>
+                            </div>
+                            <div class="apercuTxt">
                                 <h3>{{ article.title}}</h3>
-                            </a>
-                            <div class="diplayInline column">
-                                {{ article.content|raw }}
-                                <div class="aFooter"></div>
-                                <div class="aFooter1 verticalCenter displayInline">Categorie | vues 36 | likes 3 | commentaires 1</div> 
-                            </div>               
+                                <div class="article">
+                                    <div class="">{{ article.presentation }}</div>
+                                </div>              
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     {% endfor %}
                 </div>
             </div>
@@ -56,14 +54,12 @@
                 <p>{{ 'CV'| trans }}</p>
                 </div>
             </a>
-            {% if is_granted('ROLE_ADMIN') %}
-            <a class="linkWhite" href="http://localhost/myMegaPV/web/app_dev.php/register">
+            <a class="linkWhite" href="{{ path('pp_core_portfolio')}}">
                 <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
-                <span class="glyphicon size40 glyphicon-object-align-bottom" aria-hidden="true"></span>
-                <p>{{ 'DEMO'| trans }}</p>
+                    <span class="glyphicon size40 glyphicon-object-align-bottom" aria-hidden="true"></span>
+                    <p>{{ 'PORTFOLIO'| trans }}</p>
                 </div>
             </a>
-            {% endif %}
             <a class="linkWhite" href="https://www.linkedin.com/in/pierre-portelette-1885a184">
                 <div class="col-md-4 displayInline column verticalCenter">
                     <svg class="iconWhite marginTop" version="1.1" x="0px" y="0px" viewBox="0 0 66.9 66.6" style="enable-background:new 0 0 66.9 66.6;">

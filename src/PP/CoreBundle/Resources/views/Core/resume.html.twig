@@ -5,274 +5,137 @@
     <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleResume.css') }}">
 {% endblock %}
 {% block body %}
-<div class="container">
-<div class="photoResume premierplan">
-    <img class="widthSized" style="border-radius :50%;" src="{{ asset('bundles/ppcore/img/PhotoProfile.png') }}" alt="image1"/>
-</div>
-<div class="row displayInline">
-    <div class="col-md-6 displayInline horizontalLeft">
-        <a class="linkWhite col-md-2" href="{{ path('pp_core_homepage')}}">
-            <div class="displayInline column verticalCenter">
-                <span class="size30 glyphicon glyphicon-home" aria-hidden="true"></span>
-                <p>{{ 'HOME'| trans }}</p>
-            </div>
-        </a>
-        <a class="linkWhite col-md-2" href="{{ path('pp_core_contact')}}">
-            <div class="displayInline column verticalCenter">
-                <span class="size30 glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                <p>E-MAIL</p>
-            </div>
-        </a>
-        <form method="POST" class="col-md-2 displayInline column verticalCenter">
-            <button type="submit" class="linkWhite">
-                <div class="displayInline column verticalCenter">
-                    <span class="glyphicon size30 glyphicon-download" aria-hidden="true"></span>
-                    <p>PDF</p>
-                </div>
-            </button>
-        </form>
+
+<!--*******************HEADER SECTION*******************-->
+<header>
+    <div class="header-inside">
+        <a href="{{ path('pp_core_homepage')}}"><h1>Pierre<span class="blueTxt">PORTELETTE</span></h1></a>
+        <nav>
+            <ul>
+                <a href="{{ path('pp_core_homepage')}}"><li class="active">About</li></a>
+                <a href="{{ path('pp_core_resume')}}"><li>Resume</li></a>
+                <a href="{{ path('pp_core_portfolio')}}"><li>Portfolio</li></a>
+                <a href="{{ path('pp_core_contact')}}"><li>Contact</li></a>
+            </ul>
+        </nav>
     </div>
-    <div class="col-md-6 displayInline horizontalRight">
-        <a class="col-md-2" href="https://www.linkedin.com/in/pierre-portelette-1885a184">
-            <div class="linkWhite displayInline column verticalCenter">
-                <svg class="iconWhite" version="1.1" x="0px" y="0px" viewBox="0 0 66.9 66.6" style="enable-background:new 0 0 66.9 66.6;">
-                    <path d="M66.8,7.3c0-5.8-1.3-7.2-6.9-7.3c-17.7,0-35.3,0-53,0C1.4,0,0,1.4,0,6.8c0,17.7,0,35.3-0.1,53
-                        c0,3.1,0.8,5.6,3.9,6.8c19.7,0,39.4,0,59,0c3.4-1.3,3.9-4,3.9-7.3C66.8,41.9,66.8,24.6,66.8,7.3z M15.5,55.6
-                        c-2.1-0.1-5.4,1.7-5.3-2.8c0.1-8.1,0-16.3,0-24.4c0-4.1,3.1-2.6,5-2.6s5.1-1.5,5,2.6c0,4.2,0,8.3,0,12.5c0,4-0.1,8,0,12
-                        C20.4,56.9,17.4,55.7,15.5,55.6z M15,21.5c-3.1-0.3-5.3-1.8-5.2-5.2c0.1-3.5,2.2-5,5.5-5c3.5,0,5.8,1.8,5.6,5.4
-                        C20.7,20.1,18.3,21.4,15,21.5z M56.6,53.1c0,4.5-3.6,2.2-5.6,2.5c-1.9,0.3-4.6,1.1-4.4-2.7c0.2-4.3,0.1-8.7,0-13
-                        c-0.1-3.5-0.7-7.1-5.3-6.9c-4.1,0.2-5.4,3.2-5.3,7c0.1,3.3,0.1,6.7,0,10c-0.1,1.8,1.1,4.6-1,5.3c-2.4,0.8-5.3,0.5-7.9,0.1
-                        c-1.8-0.2-1-2.2-1-3.4c-0.1-7.5-0.1-15,0-22.5c0-1.6-0.9-4.4,2.1-3.9c2.8,0.5,7.2-2.8,8.3,3.4c4-4.5,8.6-4.9,13.3-3.3
-                        c4.6,1.6,6.5,5.6,6.7,10.2C56.7,41.7,56.7,47.4,56.6,53.1z"/>
-                </svg>
-                <p>LinkedIn</p>
-            </div>
-        </a>
-        {% if is_granted('ROLE_ADMIN') %}
-        <a class="linkWhite col-md-2" href="http://localhost/myMegaPV/web/app_dev.php/register">
-            <div class="displayInline column verticalCenter">
-                <span class="glyphicon size30 glyphicon-object-align-bottom" aria-hidden="true"></span>
-                <p>DEMO</p>
-            </div>
-        </a>
-        <a class="linkWhite col-md-2" href="{{ path('pp_blog_homepage')}}">
-            <div class="displayInline column verticalCenter">
-                <span class="size30 glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                <p>BLOG</p>
-            </div>
-        </a>
-        {% endif %}
-    </div>
-</div>
-<div class="row displayInline">
-    {# LEFT SECTION #}
-    <section class="col-md-6 mygrey">
-        {# IDENTITY #}
-        <div class="displayInline marginLeft marginTop column marginBottom">
-            <p class="resumeTitle">{{ user.surname}} {{ user.name|upper }}</p>
-            <div class="displayInline">
-                <div class="col-md-3">{{ user.city }}, {{ user.country }}</div>
-                <div class="col-md-5">T: {{ user.phone }}</div>
-            </div>
-            <div class="displayInline">
-                <div class="col-md-3">{{ user.age }} {{ 'age'|trans }}</div>
-                <div class="col-md-5 fontOrange">M: {{ user.email }}</div>
-            </div>
-        </div>
-        {# PROFESSIONALS #}
-        <div class="col-md-12 marginBottom marginLeft marginTop">
-            <table width="100%">
-                <tr>
-                    <td rowspan="2" style="width: 15%"><p class="resumeTitle">{{ 'title.work'|trans }}</p></td>
-                    <td class="lineNight" style="width: 85%"></td>
-                </tr>
-                <tr>
-                    <td class=""></td>
-                </tr>
-            </table>
-        </div>
-    {% for professional in items.professionals %}
-        <div class="marginBottom marginTop marginLeft paddingRight">
-            <p class="resumeItemTitle">{{ professional.position }}</p>
-            <div class="resumeItemSubtitle marginbottom">
+</header>
+
+<section id="resume">
+    <h2 class="pageTitle">My resume</h2>
+    <div class="cv">
+        <div class="cvPhoto">
+            <img src="{{ asset('bundles/ppcore/img/PhotoProfile.png') }}" alt="CV photo">
+        </div> 
+
+        <div class="cvLeft whityBkg">
+            <h3 class="cvName">{{ user.surname}} {{ user.name|upper }}</h3>
+            <p class="address"><span class="blueTxt">T: {{ user.phone }}</span>{{ user.city }}, {{ user.country }}</p>
+            <p class="address"><span class="blueTxt">M: {{ user.email }}</span>{{ user.age }} {{ 'age'|trans }}</p>
+            <p class="subTitle"><strong>After 10 years working in PV industry I came to the web development for which I had a strong interest. I am currently doing a training to become a Web Developer.</strong></p>
+
+            <h3 class="cvTitle">{{ 'title.work'|trans }}</h3>
+            {# PROFESSIONALS #}
+            {% for professional in items.professionals %}
+                <h4 class="positionTitle"{{ professional.position }}</h4>
                 {% set ville = professional.city %}
-                {% if professional.endDate > professional.startDate %}
-                <p>{{ professional.startDate|date('m/Y') }} - {{ professional.endDate|date('m/Y') }} | <strong><span class="fontOrange">{{ professional.companyName }}</span></strong> | {{ ville | trans }}</p>
+                {% if professional.endDate > professional.startDate %}    
+                <p class="positionSubTitle">{{ professional.startDate|date('m/Y') }} - {{ professional.endDate|date('m/Y') }} | <strong class="blueTxt">{{ professional.companyName }}</strong> | {{ ville | trans }}</p>
                 {% else %}
-                <p>{{ professional.startDate|date('m/Y') }} - Today | <strong><span class="fontOrange">{{ professional.companyName }}</span></strong> | {{ ville | trans }}</p>
+                <p class="positionSubTitle">{{ professional.startDate|date('m/Y') }} - Today | <strong class="blueTxt">{{ professional.companyName }}</strong> | {{ ville | trans }}</p>
                 {% endif %}
-            </div>
-            {% set desc = professional.description %}
-            <p class="">{{ desc | trans | raw}}</p>
+                {% set desc = professional.description %}
+                <p class="positionDesc">{{ desc | trans | raw}}</p>
+            {% endfor %}
         </div>
-    {% endfor %}
-    </section>
 
-    {# RIGHT SECTION #}
-    <section class="col-md-6 night education">
-        {# INTERNSHIPS #}
-        <div class="marginTop marginBottom marginRight">
-            <table width="100%">
-                <tr class="">
-                    <td class="lineGrey" style="width: 75%"></td>
-                    <td rowspan="2" style="width: 25%"><p class="resumeTitle right">{{ 'title.internship'|trans }}</p></td>
-                </tr>
-                <tr>
-                    <td class=""></td>
-                </tr>
-            </table>
-        </div>
-        
-    {% for internship in items.internships %}
-        <div class="marginBottom marginTop marginRight paddingLeft">
-            <p class="resumeItemTitle">{{ internship.position }}</p>
-            <div class="resumeItemSubtitle horizontalRight marginbottom">
-                <p>{{ internship.duration }} months | <strong><span class="fontOrange">{{ internship.companyName }}</span></strong> | {{ internship.city }}</p>
-            </div>
-            <p class="">{{ internship.description|nl2br }}</p>
-        </div>
-    {% endfor %}
+        <div class="cvRight whityBkg">
+            {# INTERNSHIPS #}
+            <h3 class="cvTitle">{{ 'title.internship'|trans }}</h3>
+            {% for internship in items.internships %}
+                <h4 class="positionTitle">{{ internship.position }}</h4>
+                <p class="positionSubTitle">{{ internship.duration }} months | <strong class="blueTxt">{{ internship.companyName }}</strong> | {{ internship.city }}</p>
+                <p class="positionDesc">{{ internship.description|nl2br }}</p>
+            {% endfor %}
 
-        {# EDUCATIONS #}
-        <div class="marginTop marginBottom marginRight horizontalRight">
-            <table width="100%" class="">
-                <tr class="">
-                    <td class="lineGrey" style="width: 75%"></td>
-                    <td rowspan="2"style="width: 25%"><p class="resumeTitle right">{{ 'title.education'|trans }}</p></td>
-                </tr>
-                <tr>
-                    <td class=""></td>
-                </tr>
-            </table>
-        </div>
-    {% for education in items.educations %}
-        <div class="displayInline spaceBetween marginBottom marginTop marginRight paddingLeft">
-            <div>
-                <p class="underline">{{ education.startDate|date('Y') }} - {{ education.endDate|date('Y') }}</p>
-            </div>
-            <div>
-                <div class="displayInline">
-                    <p class=""><strong>{{ education.diploma }} in <span class="fontOrange">{{ education.major }}</span></strong></p>
+            {# EDUCATIONS #}
+            <h3 class="cvTitle">{{ 'title.education'|trans }}</h3>
+            {% for education in items.educations %}
+                <h4 class="positionTitle">{{ education.diploma }} in <strong class="blueTxt">{{ education.major }}</strong></h4>
+                <p class="positionSubTitle">{{ education.startDate|date('Y') }} - {{ education.endDate|date('Y') }} | {{ education.schoolName }}</p>
+            {% endfor %}
+
+            {# LANGUAGES - COMPUTER SKILLS #}
+            <div class="otherSkills grayBkg">
+                <div class="languages">
+                    <h4 class="OSTitle">{{ 'title.languages'|trans }}</h4>
+                    <p class="positionDesc">{{ "French:"|trans }} <span class="blueTxt">{{ 'Native'|trans }}</span><Br/>
+                                            {{ "English:"|trans }} <span class="blueTxt">{{ 'Advanced'|trans }}</span><Br/>
+                                            {{ 'Chinese:'|trans }} <span class="blueTxt">{{ 'Intermediate (HSK 4)'|trans }}</span><Br/>
+                                            {{ 'Japanese:'|trans }} <span class="blueTxt">{{ 'Beginner'|trans }}</span>
+                    </p>
                 </div>
-                <p>{{ education.schoolName }}</p>
+                <div class="computerSkills">
+                    <h4 class="OSTitle">{{ 'title.computer'|trans }}</h4>
+                    <p class="positionDesc">{{ 'Web development:'|trans }}<Br/>
+                                            <span class="blueTxt">Symfony, html5, CSS3, php, JavaScript, WordPress, Git</span><Br/>
+                                            Microsoft Office
+                    </p>
+                </div>
             </div>
-        </div>
-    {% endfor %}
 
-    
-        {# LANGUAGES - COMPUTER SKILLS #}
-        <div class="displayInline bordered marginRight paddingLeft" style="padding-right: 20px">
-            <div class="col-md-6 paddingBottom">
-                <p class="resumeTitle center">{{ 'title.languages'|trans }}</p>
-                <p class="language"><strong>{{ "French:"|trans }}</strong><span class="fontOrange"> {{ 'Native'|trans }}</span></p>
-                <p class="language"><strong>{{ "English:"|trans }}</strong><span class="fontOrange"> {{ 'Advanced'|trans }}</span></p>
-                <p class="language"><strong>{{ 'Chinese:'|trans }}</strong><span class="fontOrange"> {{ 'Intermediate (HSK 4)'|trans }}</span></p>
-                <p class="language"><strong>{{ 'Japanese:'|trans }}</strong><span class="fontOrange"> {{ 'Beginner'|trans }}</span></p>
-            </div>
-            <div class="col-md-6">
-                <p class="resumeTitle center">{{ 'title.computer'|trans }}</p>
-                <p class="language"><strong>{{ 'Web development:'|trans }}</strong></p>
-                <p class="language"><span class="fontOrange">Symfony 3, html, css, php, javascript, Git</span></p>
-                <p class="language"><strong>Microsoft Office</strong></p>
+            {# OTHERS #}
+            <h3 class="cvTitle">{{ 'title.other'|trans }}</h3>
+                <div class="activitiesList">
+                    <div class="activityIcon">
+                        <svg width="100%"viewBox="0 0 64 64">
+                            <path d="M39,16h-8c-3.859,0-7-3.141-7-7c0-4.963-4.038-9-9-9H9C4.038,0,0,4.037,0,9v38h2v1h44.002v-1H48V25 C48,20.037,43.963,16,39,16z M8,46H4V30h3v9h1V46z M14,46h-4v-7h1v-9h2v9h1V46z M20,46h-4v-7h1v-9h3V46z M26,46h-3.999V30H25v9h1V46 z M32,46h-4v-7h1v-9h2v9h1V46z M38,46h-4v-7h1v-9h2v9h1V46z M44.002,46H40v-7h1v-9h3.002V46z M46,28H2V9c0-3.859,3.14-7,7-7h6 c3.86,0,7,3.141,7,7c0,4.963,4.037,9,9,9h8c3.859,0,7,3.141,7,7V28z"/>
+                        </svg>
+                    </div>
+
+                    <div class="activityIcon">
+                        <svg width="80%" viewBox="0 0 412.996 412.996">
+                            <path d="M392.996,28.338H20c-11.047,0-20,8.954-20,20v234c0,11.046,8.953,20,20,20h139.498v45.32h-54.283
+                                c-10.201,0-18.5,8.299-18.5,18.5s8.299,18.5,18.5,18.5h202.566c10.201,0,18.5-8.299,18.5-18.5s-8.299-18.5-18.5-18.5h-54.283
+                                v-45.32h139.498c11.047,0,20-8.954,20-20v-234C412.996,37.292,404.043,28.338,392.996,28.338z M382.996,272.338H30v-214h352.996
+                                V272.338z"/>
+                            <path d="M94.591,176.637l63.084,29.336c1.631,0.755,3.367,1.138,5.162,1.138c2.338,0,4.616-0.664,6.597-1.924
+                                c3.548-2.267,5.666-6.13,5.666-10.335v-0.322c0-4.751-2.785-9.115-7.096-11.119l-39.455-18.33l39.456-18.334
+                                c4.31-2.004,7.095-6.369,7.095-11.118v-0.319c0-4.211-2.119-8.074-5.665-10.334c-1.962-1.254-4.247-1.916-6.606-1.916
+                                c-1.778,0-3.563,0.391-5.16,1.133L94.59,153.525c-4.308,2.005-7.091,6.369-7.091,11.117v0.878
+                                C87.498,170.262,90.28,174.625,94.591,176.637z"/>
+                            <path d="M175.662,236.389c2.301,3.149,6.002,5.029,9.901,5.029h0.315c5.352,0,10.042-3.426,11.672-8.516l41.557-128.76
+                                c1.192-3.717,0.53-7.818-1.771-10.974c-2.301-3.149-6.002-5.03-9.901-5.03h-0.314c-5.354,0-10.048,3.426-11.679,8.516
+                                L173.88,225.425C172.698,229.145,173.364,233.242,175.662,236.389z"/>
+                            <path d="M237.896,135.628c0,4.746,2.782,9.11,7.095,11.122l39.455,18.33l-39.455,18.33c-4.311,2.004-7.096,6.368-7.096,11.119
+                                v0.322c0,4.205,2.117,8.068,5.669,10.336c1.974,1.258,4.254,1.923,6.595,1.923c1.792,0,3.527-0.383,5.169-1.142l63.081-29.335
+                                c4.307-2.009,7.089-6.372,7.089-11.115v-0.878c0-4.748-2.783-9.112-7.093-11.117l-63.08-29.334
+                                c-1.591-0.739-3.373-1.131-5.152-1.131c-2.358,0-4.644,0.662-6.604,1.912c-3.554,2.264-5.673,6.127-5.673,10.338V135.628
+                                L237.896,135.628z"/>
+                        </svg>
+                    </div>
+
+                    <div class="activityIcon">
+                        <svg width="100%" viewBox="-12 0 58 58">
+                            <path d="M10,40 L6.723,40 L13.868,52.5 C14.415,53.59 14.69,53.883 15.629,53.963 L11.265,40 L10,40 Z" id="Shape"/>
+                            <path d="M26,58 C26.5522847,58 27,57.5522847 27,57 L27,44.516 L25,48.016 L25,57 C25,57.5522847 25.4477153,58 26,58 Z" id="Shape"/>
+                            <path d="M8,58 C8.55228475,58 9,57.5522847 9,57 L9,48.014 L7,44.514 L7,57 C7,57.5522847 7.44771525,58 8,58 Z" id="Shape"/>
+                            <path d="M24,40 L22.735,40 L18.37,53.968 C19.308,53.89 19.578,53.607 20.105,52.553 L20.132,52.504 L27.277,40 L24,40 Z" id="Shape"/>
+                            <circle id="Oval" cx="17" cy="30" r="3"/>
+                            <path d="M3,37 L6,37 L6,38 L28,38 L28,37 L31,37 C32.6568542,37 34,35.6568542 34,34 L34,10 C33.9939376,4.47966557 29.5203344,0.00606237045 24,0 L10,0 C4.47966557,0.00606237045 0.00606237045,4.47966557 0,10 L0,34 C0,35.6568542 1.34314575,37 3,37 Z M9,16 C8.44771525,16 8,15.5522847 8,15 C8,14.4477153 8.44771525,14 9,14 L10,14 C10.5522847,14 11,14.4477153 11,15 C11,15.5522847 10.5522847,16 10,16 L9,16 Z M17,35 C15.4345092,34.9954393 13.962398,34.2545681 13.026,33 L11,33 C10.4477153,33 10,32.5522847 10,32 C10,31.4477153 10.4477153,31 11,31 L12.1,31 C11.965306,30.3401368 11.965306,29.6598632 12.1,29 L11,29 C10.4477153,29 10,28.5522847 10,28 C10,27.4477153 10.4477153,27 11,27 L13.026,27 C14.4402576,25.1284487 16.9669968,24.4943683 19.0973568,25.4764045 C21.2277168,26.4584408 22.3866764,28.7915249 21.8821543,31.0824388 C21.3776323,33.3733527 19.3458079,35.0037387 17,35 Z M13,15 C13,14.4477153 13.4477153,14 14,14 L19,14 C19.5522847,14 20,14.4477153 20,15 C20,15.5522847 19.5522847,16 19,16 L14,16 C13.4477153,16 13,15.5522847 13,15 Z M2,10 C2.00495988,5.58377808 5.58377808,2.00495988 10,2 L16,2 L16,5 C16,6.1045695 15.1045695,7 14,7 L10,7 C8.34314575,7 7,8.34314575 7,10 L27,10 C27,8.34314575 25.6568542,7 24,7 L20,7 C18.8954305,7 18,6.1045695 18,5 L18,2 L24,2 C28.4162219,2.00495988 31.9950401,5.58377808 32,10 L32,34 C32,34.5522847 31.5522847,35 31,35 L28,35 L28,12 L6,12 L6,35 L3,35 C2.44771525,35 2,34.5522847 2,34 L2,10 Z" id="Shape"/>
+                            <path d="M16,54 L16,56 C16,56.5522847 16.4477153,57 17,57 C17.5522847,57 18,56.5522847 18,56 L18,54 C18,53.4477153 17.5522847,53 17,53 C16.4477153,53 16,53.4477153 16,54 Z" id="Shape"/>
+                        </svg>
+                    </div>
+
+                    <div class="activityIcon">
+                        <svg width="100%" viewBox="0 0 64 64">
+                            <path d="M48,27v-3c0-1.654-1.346-3-3-3h-7.661c0.134-0.084,0.257-0.182,0.368-0.293c0.575-0.574,0.793-1.379,0.598-2.205 c-0.341-1.441-1.831-2.731-3.988-3.451c-1.338-0.445-1.338-0.445-3.452-2.09c-0.771-0.601-1.847-1.436-3.359-2.584 c2.637-1.668,5.927-3.796,10.05-6.545C37.833,3.646,38,3.334,38,3c0-1.654-1.346-3-3-3c-0.208,0-0.412,0.064-0.581,0.186 C29.968,3.365,26.592,5.83,24,7.751c-2.591-1.921-5.968-4.386-10.419-7.565C13.412,0.064,13.208,0,13,0c-1.654,0-3,1.346-3,3 c0,0.334,0.167,0.646,0.445,0.832c4.124,2.749,7.413,4.877,10.05,6.545c-1.513,1.148-2.588,1.983-3.359,2.584 c-2.115,1.645-2.115,1.645-3.453,2.09c-2.157,0.72-3.648,2.01-3.988,3.451c-0.195,0.826,0.023,1.631,0.598,2.205 c0.111,0.111,0.235,0.209,0.368,0.293H3c-1.654,0-3,1.346-3,3v3h2v15H0v3c0,1.654,1.346,3,3,3h42c1.654,0,3-1.346,3-3v-3h-2V27H48z M33.684,16.949c1.885,0.627,2.567,1.561,2.675,2.013c0.051,0.215-0.025,0.29-0.065,0.331c-0.028,0.028-0.14,0.082-0.355,0.082 c-0.866,0-2.362-0.83-2.984-2.678C33.163,16.773,33.4,16.854,33.684,16.949z M35.27,2.037c0.269,0.074,0.491,0.26,0.618,0.502 c-4.187,2.785-7.481,4.908-10.091,6.551c-0.041-0.03-0.08-0.061-0.121-0.091C28.129,7.185,31.251,4.909,35.27,2.037z M12.112,2.539 c0.127-0.242,0.35-0.428,0.619-0.502c4.019,2.872,7.14,5.147,9.594,6.962c-0.041,0.03-0.081,0.061-0.122,0.091 C19.594,7.447,16.299,5.324,12.112,2.539z M11.642,18.962c0.106-0.452,0.79-1.386,2.674-2.013c0.283-0.095,0.52-0.176,0.73-0.252 c-0.622,1.847-2.118,2.678-2.984,2.678c-0.216,0-0.327-0.054-0.355-0.082C11.667,19.252,11.591,19.177,11.642,18.962z M16.948,17.317c0.236-0.704,0.236-0.704,2.448-1.999c1.018-0.596,2.497-1.463,4.604-2.756c2.106,1.293,3.586,2.16,4.604,2.756 c2.213,1.295,2.213,1.295,2.448,1.998c0.626,1.879,1.927,3.111,3.254,3.684H13.694C15.022,20.428,16.322,19.195,16.948,17.317z M46,45c0,0.551-0.448,1-1,1H3c-0.551,0-1-0.449-1-1v-1h44V45z M15,29v-2h18v2h-2v11h2v2H15v-2h2V29H15z M35,29v-2h9v15h-9v-2h2V29 H35z M35,38h-2v-7h2V38z M15,38h-2v-7h2V38z M13,29h-2v11h2v2H4V27h9V29z M2,25v-1c0-0.551,0.449-1,1-1h42c0.552,0,1,0.449,1,1v1H2z "/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
 
-        {# OTHERS #}
-        <div class="marginBottom marginTop paddingLeft">
-            <table width="100%">
-                <tr>
-                    <td rowspan="2" style="width: 35%"><p class="resumeTitle">{{ 'title.other'|trans }}</p></td>
-                    <td class="lineGrey" style="width: 65%"></td>
-                </tr>
-                <tr>
-                    <td class=""></td>
-                </tr>
-            </table>
-        </div>
-        <div class="marginRight marginLeft displayInline col-md-12 marginTop">
-            <div class="col-md-2">
-                <svg class="hobbyWhite" width="54px" height="54px" viewBox="0 0 64 64">
-                    <path d="M39,16h-8c-3.859,0-7-3.141-7-7c0-4.963-4.038-9-9-9H9C4.038,0,0,4.037,0,9v38h2v1h44.002v-1H48V25 C48,20.037,43.963,16,39,16z M8,46H4V30h3v9h1V46z M14,46h-4v-7h1v-9h2v9h1V46z M20,46h-4v-7h1v-9h3V46z M26,46h-3.999V30H25v9h1V46 z M32,46h-4v-7h1v-9h2v9h1V46z M38,46h-4v-7h1v-9h2v9h1V46z M44.002,46H40v-7h1v-9h3.002V46z M46,28H2V9c0-3.859,3.14-7,7-7h6 c3.86,0,7,3.141,7,7c0,4.963,4.037,9,9,9h8c3.859,0,7,3.141,7,7V28z"/>
-                </svg>
-            </div>
-            <div class="col-md-2">
-                <svg class="hobbyOrange" width="54px" height="54px" viewBox="0 0 64 64">
-                    <path d="M48,27v-3c0-1.654-1.346-3-3-3h-7.661c0.134-0.084,0.257-0.182,0.368-0.293c0.575-0.574,0.793-1.379,0.598-2.205 c-0.341-1.441-1.831-2.731-3.988-3.451c-1.338-0.445-1.338-0.445-3.452-2.09c-0.771-0.601-1.847-1.436-3.359-2.584 c2.637-1.668,5.927-3.796,10.05-6.545C37.833,3.646,38,3.334,38,3c0-1.654-1.346-3-3-3c-0.208,0-0.412,0.064-0.581,0.186 C29.968,3.365,26.592,5.83,24,7.751c-2.591-1.921-5.968-4.386-10.419-7.565C13.412,0.064,13.208,0,13,0c-1.654,0-3,1.346-3,3 c0,0.334,0.167,0.646,0.445,0.832c4.124,2.749,7.413,4.877,10.05,6.545c-1.513,1.148-2.588,1.983-3.359,2.584 c-2.115,1.645-2.115,1.645-3.453,2.09c-2.157,0.72-3.648,2.01-3.988,3.451c-0.195,0.826,0.023,1.631,0.598,2.205 c0.111,0.111,0.235,0.209,0.368,0.293H3c-1.654,0-3,1.346-3,3v3h2v15H0v3c0,1.654,1.346,3,3,3h42c1.654,0,3-1.346,3-3v-3h-2V27H48z M33.684,16.949c1.885,0.627,2.567,1.561,2.675,2.013c0.051,0.215-0.025,0.29-0.065,0.331c-0.028,0.028-0.14,0.082-0.355,0.082 c-0.866,0-2.362-0.83-2.984-2.678C33.163,16.773,33.4,16.854,33.684,16.949z M35.27,2.037c0.269,0.074,0.491,0.26,0.618,0.502 c-4.187,2.785-7.481,4.908-10.091,6.551c-0.041-0.03-0.08-0.061-0.121-0.091C28.129,7.185,31.251,4.909,35.27,2.037z M12.112,2.539 c0.127-0.242,0.35-0.428,0.619-0.502c4.019,2.872,7.14,5.147,9.594,6.962c-0.041,0.03-0.081,0.061-0.122,0.091 C19.594,7.447,16.299,5.324,12.112,2.539z M11.642,18.962c0.106-0.452,0.79-1.386,2.674-2.013c0.283-0.095,0.52-0.176,0.73-0.252 c-0.622,1.847-2.118,2.678-2.984,2.678c-0.216,0-0.327-0.054-0.355-0.082C11.667,19.252,11.591,19.177,11.642,18.962z M16.948,17.317c0.236-0.704,0.236-0.704,2.448-1.999c1.018-0.596,2.497-1.463,4.604-2.756c2.106,1.293,3.586,2.16,4.604,2.756 c2.213,1.295,2.213,1.295,2.448,1.998c0.626,1.879,1.927,3.111,3.254,3.684H13.694C15.022,20.428,16.322,19.195,16.948,17.317z M46,45c0,0.551-0.448,1-1,1H3c-0.551,0-1-0.449-1-1v-1h44V45z M15,29v-2h18v2h-2v11h2v2H15v-2h2V29H15z M35,29v-2h9v15h-9v-2h2V29 H35z M35,38h-2v-7h2V38z M15,38h-2v-7h2V38z M13,29h-2v11h2v2H4V27h9V29z M2,25v-1c0-0.551,0.449-1,1-1h42c0.552,0,1,0.449,1,1v1H2z "/>
-                </svg>
-            </div>
-            <div class="col-md-2">
-                <svg class="hobbyWhite" x="0px" y="0px" width="54px" height="54px" viewBox="0 0 605.482 605.482" style="enable-background:new 0 0 605.482 605.482;">s
-                    <path d="M529.643,355.606c-38.715,14.116-81.563-5.842-95.671-44.572
-                        c-14.115-38.73,5.834-81.562,44.564-95.679c38.724-14.115,81.563,5.834,95.679,44.564
-                        C588.331,298.651,568.381,341.491,529.643,355.606L529.643,355.606z M103.523,386.23c9.307-8.146,23.352-20.442,53.809-20.442
-                        c30.457,0,44.493,12.296,53.792,20.435c6.216,5.452,8.083,7.09,18.909,7.09c10.833,0,12.701-1.638,18.9-7.082
-                        c9.307-8.146,23.352-20.442,53.808-20.442c30.457,0,44.485,12.296,53.793,20.435c6.199,5.452,8.083,7.09,18.908,7.09
-                        s12.709-1.638,18.9-7.082c5.222-4.562,12.065-10.38,22.326-14.656c0.223-13.933-4.006-31.713-17.033-50.652
-                        c-6.827-9.92-65.61-92.214-65.61-92.214l71.763-56.621c11.382-8.981,13.329-25.481,4.348-36.855
-                        c-8.989-11.382-25.474-13.305-36.855-4.348L281.91,202.98c-10.984,8.663-13.233,24.417-5.126,35.814l51.821,72.819l-198.94,48.356
-                        c-18.368,4.467-32.5,17.128-39.732,33.111C96.267,392.51,98.524,390.618,103.523,386.23L103.523,386.23z M565.941,416.123
-                        c7.034-6.144,12.089-10.603,27.619-10.603c6.597,0,11.922-5.325,11.922-11.922c0-6.581-5.325-11.922-11.922-11.922
-                        c-24.479,0-34.932,9.155-43.325,16.516c-7.312,6.391-12.589,11.008-29.367,11.008c-16.795,0-22.072-4.617-29.385-11.023
-                        c-8.393-7.353-18.828-16.5-43.324-16.5c-24.48,0-34.932,9.147-43.325,16.5c-7.312,6.406-12.59,11.023-29.376,11.023
-                        c-16.794,0-22.063-4.617-29.376-11.023c-8.401-7.353-18.845-16.5-43.325-16.5c-24.488,0-34.932,9.147-43.333,16.5
-                        c-7.296,6.406-12.582,11.023-29.376,11.023c-16.794,0-22.071-4.617-29.376-11.023c-8.401-7.353-18.845-16.5-43.325-16.5
-                        s-34.932,9.147-43.333,16.5c-7.296,6.406-12.574,11.023-29.376,11.023c-16.794,0-22.072-4.617-29.376-11.023
-                        c-8.417-7.345-18.861-16.5-43.341-16.5C5.341,381.677,0,387.018,0,393.599c0,6.597,5.341,11.922,11.922,11.922
-                        c15.515,0,20.593,4.451,27.611,10.603c8.616,7.543,19.338,16.922,45.089,16.922s36.474-9.379,45.089-16.922
-                        c7.026-6.151,12.105-10.603,27.62-10.603c15.514,0,20.593,4.451,27.611,10.603c8.616,7.543,19.337,16.922,45.089,16.922
-                        c25.751,0,36.474-9.379,45.089-16.922c7.026-6.151,12.097-10.603,27.619-10.603c15.515,0,20.578,4.451,27.611,10.603
-                        c8.616,7.543,19.338,16.922,45.09,16.922c25.743,0,36.474-9.379,45.089-16.922c7.034-6.151,12.089-10.603,27.62-10.603
-                        c15.53,0,20.601,4.451,27.627,10.603c8.607,7.543,19.33,16.922,45.09,16.922C546.611,433.045,557.333,423.674,565.941,416.123
-                        L565.941,416.123z M565.941,416.123c7.034-6.144,12.089-10.603,27.619-10.603c6.597,0,11.922-5.325,11.922-11.922
-                        c0-6.581-5.325-11.922-11.922-11.922c-24.479,0-34.932,9.155-43.325,16.516c-7.312,6.391-12.589,11.008-29.367,11.008
-                        c-16.795,0-22.072-4.617-29.385-11.023c-8.393-7.353-18.828-16.5-43.324-16.5c-24.48,0-34.932,9.147-43.325,16.5
-                        c-7.312,6.406-12.59,11.023-29.376,11.023c-16.794,0-22.063-4.617-29.376-11.023c-8.401-7.353-18.845-16.5-43.325-16.5
-                        c-24.488,0-34.932,9.147-43.333,16.5c-7.296,6.406-12.582,11.023-29.376,11.023c-16.794,0-22.071-4.617-29.376-11.023
-                        c-8.401-7.353-18.845-16.5-43.325-16.5s-34.932,9.147-43.333,16.5c-7.296,6.406-12.574,11.023-29.376,11.023
-                        c-16.794,0-22.072-4.617-29.376-11.023c-8.417-7.345-18.861-16.5-43.341-16.5C5.341,381.677,0,387.018,0,393.599
-                        c0,6.597,5.341,11.922,11.922,11.922c15.515,0,20.593,4.451,27.611,10.603c8.616,7.543,19.338,16.922,45.089,16.922
-                        s36.474-9.379,45.089-16.922c7.026-6.151,12.105-10.603,27.62-10.603c15.514,0,20.593,4.451,27.611,10.603
-                        c8.616,7.543,19.337,16.922,45.089,16.922c25.751,0,36.474-9.379,45.089-16.922c7.026-6.151,12.097-10.603,27.619-10.603
-                        c15.515,0,20.578,4.451,27.611,10.603c8.616,7.543,19.338,16.922,45.09,16.922c25.743,0,36.474-9.379,45.089-16.922
-                        c7.034-6.151,12.089-10.603,27.62-10.603c15.53,0,20.601,4.451,27.627,10.603c8.607,7.543,19.33,16.922,45.09,16.922
-                        C546.611,433.045,557.333,423.674,565.941,416.123L565.941,416.123z M565.941,463.318c7.034-6.159,12.089-10.595,27.619-10.595
-                        c6.597,0,11.922-5.341,11.922-11.922s-5.325-11.922-11.922-11.922c-24.479,0-34.932,9.132-43.325,16.492
-                        c-7.296,6.398-12.573,11.016-29.367,11.016c-16.795,0-22.072-4.617-29.385-11.016c-8.393-7.36-18.845-16.492-43.324-16.492
-                        c-24.48,0-34.932,9.132-43.325,16.492c-7.312,6.398-12.59,11.016-29.376,11.016c-16.794,0-22.063-4.617-29.376-11.016
-                        c-8.401-7.36-18.845-16.492-43.325-16.492c-24.488,0-34.932,9.132-43.333,16.492c-7.296,6.398-12.582,11.016-29.376,11.016
-                        c-16.794,0-22.071-4.617-29.376-11.016c-8.401-7.36-18.845-16.492-43.325-16.492s-34.932,9.132-43.333,16.492
-                        c-7.296,6.398-12.574,11.016-29.376,11.016c-16.794,0-22.072-4.617-29.376-11.016c-8.401-7.36-18.845-16.492-43.325-16.492
-                        c-6.581,0-11.922,5.341-11.922,11.922s5.341,11.922,11.922,11.922c15.515,0,20.594,4.436,27.612,10.587
-                        c8.616,7.543,19.337,16.922,45.089,16.922c25.751,0,36.474-9.379,45.081-16.922c7.034-6.151,12.113-10.587,27.627-10.587
-                        s20.593,4.436,27.612,10.587c8.616,7.543,19.337,16.922,45.089,16.922c25.752,0,36.474-9.379,45.082-16.922
-                        c7.034-6.151,12.105-10.587,27.627-10.587c15.515,0,20.578,4.436,27.62,10.587c8.607,7.543,19.329,16.922,45.081,16.922
-                        c25.744,0,36.474-9.379,45.09-16.922c7.033-6.151,12.089-10.587,27.619-10.587s20.602,4.436,27.627,10.587
-                        c8.616,7.543,19.33,16.922,45.09,16.922C546.611,480.232,557.333,470.854,565.941,463.318L565.941,463.318z"/>
-                </svg>
-            </div>
-            <div class="col-md-2">
-                <svg class="hobbyOrange" width="50px" height="50px" viewBox="0 0 412.996 412.996">
-                    <path d="M392.996,28.338H20c-11.047,0-20,8.954-20,20v234c0,11.046,8.953,20,20,20h139.498v45.32h-54.283
-                        c-10.201,0-18.5,8.299-18.5,18.5s8.299,18.5,18.5,18.5h202.566c10.201,0,18.5-8.299,18.5-18.5s-8.299-18.5-18.5-18.5h-54.283
-                        v-45.32h139.498c11.047,0,20-8.954,20-20v-234C412.996,37.292,404.043,28.338,392.996,28.338z M382.996,272.338H30v-214h352.996
-                        V272.338z"/>
-                    <path d="M94.591,176.637l63.084,29.336c1.631,0.755,3.367,1.138,5.162,1.138c2.338,0,4.616-0.664,6.597-1.924
-                        c3.548-2.267,5.666-6.13,5.666-10.335v-0.322c0-4.751-2.785-9.115-7.096-11.119l-39.455-18.33l39.456-18.334
-                        c4.31-2.004,7.095-6.369,7.095-11.118v-0.319c0-4.211-2.119-8.074-5.665-10.334c-1.962-1.254-4.247-1.916-6.606-1.916
-                        c-1.778,0-3.563,0.391-5.16,1.133L94.59,153.525c-4.308,2.005-7.091,6.369-7.091,11.117v0.878
-                        C87.498,170.262,90.28,174.625,94.591,176.637z"/>
-                    <path d="M175.662,236.389c2.301,3.149,6.002,5.029,9.901,5.029h0.315c5.352,0,10.042-3.426,11.672-8.516l41.557-128.76
-                        c1.192-3.717,0.53-7.818-1.771-10.974c-2.301-3.149-6.002-5.03-9.901-5.03h-0.314c-5.354,0-10.048,3.426-11.679,8.516
-                        L173.88,225.425C172.698,229.145,173.364,233.242,175.662,236.389z"/>
-                    <path d="M237.896,135.628c0,4.746,2.782,9.11,7.095,11.122l39.455,18.33l-39.455,18.33c-4.311,2.004-7.096,6.368-7.096,11.119
-                        v0.322c0,4.205,2.117,8.068,5.669,10.336c1.974,1.258,4.254,1.923,6.595,1.923c1.792,0,3.527-0.383,5.169-1.142l63.081-29.335
-                        c4.307-2.009,7.089-6.372,7.089-11.115v-0.878c0-4.748-2.783-9.112-7.093-11.117l-63.08-29.334
-                        c-1.591-0.739-3.373-1.131-5.152-1.131c-2.358,0-4.644,0.662-6.604,1.912c-3.554,2.264-5.673,6.127-5.673,10.338V135.628
-                        L237.896,135.628z"/>
-                </svg>
-            </div>
-        </div>
+        
     </section>
-</div>
-</div>
 {% endblock %}

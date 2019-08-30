@@ -58,6 +58,30 @@ class CoreController extends Controller
             'items'=>$items
         ));
     }
+    public function resumepdfAction(Request $request) {
+        $em = $this->getDoctrine()->getManager();
+
+        $userRepository = $em->getRepository('PPUserBundle:User');
+        $user = $userRepository->find(3);
+
+        $professionalRepository = $em->getRepository('PPCoreBundle:Professional');
+        $professionals = $professionalRepository->findBy(array(), array('startDate' => 'desc'));
+ 
+        $items['professionals']=$professionals;
+        
+        $internshipRepository = $em->getRepository('PPCoreBundle:Internship');
+        $internships = $internshipRepository->findBy(array(), array('startDate' => 'desc'));
+        $items['internships']=$internships;
+
+        $educationRepository = $em->getRepository('PPCoreBundle:Education');
+        $educations = $educationRepository->findBy(array(), array('startDate' => 'desc'));
+        $items['educations']=$educations;
+
+        return $this->render('@PPCore/Core/printResume.html.twig', array(
+            'user'=>$user,
+            'items'=>$items
+        ));
+    }
 
     /**
      * @Security("has_role('ROLE_ADMIN')")

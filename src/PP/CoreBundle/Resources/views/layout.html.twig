@@ -1,9 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Pierre Portelette personnal website">
         <title>{% block title %}{{ 'site.name'|trans }}{% endblock %}</title>
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/ppcore/img/Icon.png') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/bootstrap.min.css') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/ppcore/img/logo.png') }}" />
         <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleLayout.css') }}">
         {% block stylesheets %}
 
@@ -15,10 +17,11 @@
             {% block body %}
             {% endblock %}
 
-
-        <script src="{{ asset('bundles/ppcore/js/jquery-3.3.1.min.js') }}"></script>
-        <script src="{{ asset('bundles/ppcore/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('bundles/ppcore/js/ajax.js') }}"></script>
+        <footer>
+            <div class="header-inside">
+                <p>Designed by <span class="blueTxt"><a href="http://www.pierreportelette.com" class="lightGreenText">Pierre Portelette</span></a></p>
+            </div>
+        </footer>
         {% block javascript %}
         {% endblock %}
     </body>

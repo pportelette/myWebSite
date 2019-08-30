@@ -26,14 +26,14 @@ class Article
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createdAt", type="date")
+     * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updatedAt", type="date", nullable=true)
+     * @ORM\Column(name="updatedAt", type="datetime", nullable=true)
      */
     private $updatedAt;
 
@@ -71,6 +71,13 @@ class Article
      * @ORM\Column(name="content", type="text")
      */
     private $content;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="presentation", type="text")
+     */
+    private $presentation;
 
     /**
      * @Gedmo\Slug(fields={"title"})
@@ -296,5 +303,29 @@ class Article
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * Set presentation.
+     *
+     * @param string $presentation
+     *
+     * @return Article
+     */
+    public function setPresentation($presentation)
+    {
+        $this->presentation = $presentation;
+
+        return $this;
+    }
+
+    /**
+     * Get presentation.
+     *
+     * @return string
+     */
+    public function getPresentation()
+    {
+        return $this->presentation;
     }
 }

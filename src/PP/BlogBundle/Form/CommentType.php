@@ -19,7 +19,7 @@ class CommentType extends AbstractType
         $builder
             ->add('username',   TextType::class)
             ->add('content',    TextareaType::class)
-            ->add('Save',       SubmitType::class)
+            ->add('Comment',       SubmitType::class)
         ;
 
     }/**

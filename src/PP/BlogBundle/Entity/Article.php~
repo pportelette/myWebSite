@@ -26,14 +26,14 @@ class Article
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createdAt", type="date")
+     * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updatedAt", type="date", nullable=true)
+     * @ORM\Column(name="updatedAt", type="datetime", nullable=true)
      */
     private $updatedAt;
 
@@ -71,6 +71,13 @@ class Article
      * @ORM\Column(name="content", type="text")
      */
     private $content;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="presentation", type="text")
+     */
+    private $presentation;
 
     /**
      * @Gedmo\Slug(fields={"title"})
@@ -272,5 +279,29 @@ class Article
     public function removeComment(\PP\BlogBundle\Entity\Comment $comment)
     {
         return $this->comments->removeElement($comment);
+    }
+
+    /**
+     * Set slug.
+     *
+     * @param string $slug
+     *
+     * @return Article
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug.
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }

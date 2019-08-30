@@ -1,133 +1,142 @@
-:root {
-    --night: #0C1B31;
-    --myorange: #D45440;
-    --mygray: #F2F2F2;
+/**************RESUME*****************/
+#resume {
+    display: flex;
 }
-body {
-    background-image: url("../img/ORSJP90.jpg");
-    background-size: 125%;
+.cv {
+    display: flex;
+    max-width: 1300px;
+    margin: 50px 10%;
+    box-shadow: 6px 6px 10px var(--myGray);
+    position: relative;
 }
-
-.container {
-    margin-top: 50px;
+.cvPhoto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: -60px;
+    justify-content: center;
 }
-
-div {
-    margin: 0; 
-    padding: 0;
+.cvPhoto img {
+    width: 15%;
+    border: 5px solid var(--whity);
+    border-radius: 200px;
 }
-
-.deco {
-    background-color: #D45440;
+.cvLeft, .cvRight {
+    width: 50%;
+    padding: 15px 25px;
 }
-
-.element:nth-child(1)
-{
-    height: 45%;
+.cvLeft {
+    align-items: flex-start;
 }
-.element:nth-child(2)
-{
-    height: 55%;
-}
-
-.premierplan {
-    z-index: 1;
-}
-
-.title {
-    text-decoration: underline;
-    text-decoration-color: #D45440;
-}
-
-icon {
-    height: 200px;
-}
-
-.resumeTitle {
-    font-size: large;
-    font-weight: bold;
-    padding-top: 5px;
-}
-.resumeItemTitle {
-    font-size: medium;
-    font-weight: bold;
-}
-
-.resumeItemSubtitle {
-    font-size: small;
-}
-
-.companyName {
-    color: #D45440;
-    font-weight: bold;
-}
-
-.education {
+.cvRight {
+    align-items: flex-end;
     text-align: right;
 }
-
-.lineNight {
-    border-bottom: rgb(15, 50, 60) 1.5px solid;
-    border-top: #F2F2F2 1px solid;
+.cvName {
+    margin-bottom: 0;
 }
-
-.lineGrey {
-    border-bottom: white 1.5px solid;
-    border-top: rgb(15, 50, 60) 1px solid
+.address {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0 20% 0 15px;
 }
-
-.mygrey .resumeTitle{
-    color: rgb(15, 50, 60);
+.cvTitle {
+    border-top: 1px solid var(--myGray);
+    border-bottom: 1px solid var(--myGray);
 }
-
-.night .resumeTitle{
-    color: white;
+.positionTitle {
+    font-size: 1.1em;
+    margin-bottom: 0;
 }
-
-.col-md-6, .col-md-12 {
-    padding-left: 0px;
-    padding-right: 0px;
+.subTitle {
+    font-size: 1em;
+    text-align: center;
+    margin: 30px 0;
 }
-
-.photoResume {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    width: 160px;
-    border: 6px #F2F2F2 solid;
-    border-radius: 50%;
-    margin-left: -80px;
+.positionSubTitle {
+    font-size: 0.85em;
+    margin: 0;
 }
-
-.underline {
-    border-bottom: #D45440 1px solid;
+.positionDesc {
+    font-size: 1em;
 }
-
-button {
-    border: 0px;
-    background-color: rgb(1, 12, 15);
+.otherSkills {
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 6px 6px 10px var(--dimGray);
 }
-
-.language {
+.languages, .computerSkills {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
     text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 20px;
+}
+.OSTitle {
+    margin-bottom: 0;
+    text-align: center;
 }
 
-.iconBlue {
-    height: 30px;
-    fill:rgb(15, 50, 60);
+.activitiesList {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
 }
-
-.iconWhite {
-    height: 30px;
-    fill:white;
+.activityIcon {
+    width: 20%;
+    justify-content: center;
 }
+@media all and (max-width: 1200px) {
 
-.hobbyWhite {
-    fill:white;
+    .cv {
+        margin: 50px 5%;
+    }
+    .address {
+        margin: 0 10% 0 15px;
+    }
 }
-
-.hobbyOrange {
-    fill: #D45440;
+@media all and (max-width: 1000px) {
+    .cvTitle {
+        font-size: 1.2em;
+    }
+    .address {
+        font-size: 0.8em;
+    }
+    .positionTitle {
+        font-size: 1em;
+    }
+    .subTitle {
+        font-size: 0.9em;
+    }
+    .positionSubTitle {
+        font-size: 0.8em;
+    }
+    .positionDesc {
+        font-size: 0.9em;
+    }
+}
+@media all and (max-width: 768px) {
+    .cv {
+        flex-direction: column;
+    }
+    .cvLeft, .cvRight {
+        width: 95%;
+        padding: 15px 2.5%;
+    }
+    .cvRight {
+        text-align: left;
+    }
+    .cvPhoto img {
+        width: 20%;
+    }
+    .address {
+        margin: 0 0 0 0;
+    }
 }

@@ -9,6 +9,9 @@ pp_core_newitem:
 pp_core_resume:
     path:     /resume
     defaults: { _controller: PPCoreBundle:Core:resume }
+pp_core_resumepdf:
+    path:     /resumepdf
+    defaults: { _controller: PPCoreBundle:Core:resumepdf }
 
 pp_core_contact:
     path:     /contact

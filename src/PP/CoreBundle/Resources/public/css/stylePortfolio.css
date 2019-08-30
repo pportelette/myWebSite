@@ -1,0 +1,60 @@
+/**************PORTFOLIO*****************/
+.projectsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+    justify-content: space-around;
+}
+.projectsList a {
+    width: 30%;
+    display: flex;
+}
+.projectsList a:hover .project {
+    box-shadow: 6px 6px 10px var(--myBlue);
+}
+.projectsList a:active .project {
+    box-shadow: none;
+}
+.project {
+    border-radius: 5px;
+    padding: 20px 0;
+    box-shadow: 6px 6px 10px var(--myGray);
+    margin-bottom: 40px;
+}
+.project h4 {
+    color: var(--myBlue);
+    font-size: 1.1em;
+}
+.project p {
+    font-size: 1em;
+}
+.project > img {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+}
+.project .divText {
+    margin: 0 30px;
+}
+
+@media all and (max-width: 1200px) {
+    .project h4 {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .project p {
+        margin-top: 10px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .projectsList {
+        padding: 30px 5%;
+    }
+    .projectsList a {
+        width: 45%;
+    }
+}
+@media all and (max-width: 600px) {
+    .projectsList a {
+        width: 90%;
+    }
+}

@@ -1,113 +1,106 @@
-:root {
-    --night: #0C1B31;
-    --myorange: #D45440;
-    --mygray: #F2F2F2;
-}
+/**************ABOUT*****************/
 
-body{
-    background-color: rgb(15, 50, 60);
-}
-
-.mainSection {
-    background-image: url("../img/ORSJP90.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    padding-top: 20px;
-    min-height: 100%;
-    padding-left: 50px;
-    padding-right: 50px
-}
-
-.deco {
-    background-color: #D45440;
-}
-
-.decoWhite {
-    height: 115%; 
-    position: absolute;
-    margin-top: 30px;
-    margin-left: -30px;
-    background-color: white;
-    z-index: 1;
-}
-
-.sideNav {
-    position: fixed;
-    right: 0px;
-    top: 60px;
-}
-
-.title {
-    text-decoration: underline;
-    text-decoration-color: #D45440;
-}
-
-.noWrap {
-    word-wrap: nowrap;
-}
-
-.iconBlue {
-    height: 40px;
-    fill:#0C1B31;
-}
-
-.iconWhite {
-    height: 40px;
-    fill:white;
-}
-.col-md-6, .col-md-12, .col-xs-12 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 .element {
-    background-color: rgba(95, 137, 148, 0.1);
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 10%;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+.element .divText {
+    width: 55%;
+}
+
+.element .divImg {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divImg > img {
+    height: auto;
+    max-width: 100%;
+    border: 2px solid var(--dimGray);
+}
+.element h4 {
+    color: var(--myGray);
+    text-decoration: underline;
+    text-decoration-color: var(--myGreen);
+}
+.element.blueBkg {
+    box-shadow: 0px 6px 10px var(--myGray);
+}
+.skill {
+    width: 10%;
+    height: 210px;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px var(--myGray);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-button {
-    border: 0px;
-    background-color: #F2F2F2;
+.skill:hover {
+    box-shadow: none;
 }
-
-textarea{
-    min-height: 200px;
+.icon {
+    width: 70%;
+    height: 70%;
 }
+@media all and (max-width: 1200px) {
 
-button {
-    width: 50%;
-}
-
-.btn-default:hover {
-    background-color: #D45440;
-}
-
-.btn-default {
-    border-radius: 0px;
-}
-
-.first {
-    padding-right: 10px;
-}
-
-.second {
-    padding-left: 10px;
-}
-
-@media all and (max-width: 800px) {
-    .mainSection {
-        padding-left: 10px;
-        padding-right: 10px;
+    .skill {
+        width: 14%;
+        height: 150px;
     }
-    .first {
-        padding-right: 0px;
+    h2 {
+        font-size: 1.6em;
     }
-    .second {
-        padding-left: 0px;
+    h3 {
+        font-size: 1.4em;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    p, li {
+        font-size: 1em;
+    }
+    
+}
+@media all and (max-width: 1000px) {
+    .skill {
+        width: 17%;
+        height: 180px;
+    }
+    .element {
+        padding: 40px 5%;
+    }
+    
+    
+}
+@media all and (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    .skill {
+        width: 21%;
+        height: 150px;
+    }
+    .element .divText {
+        width: 100%;
+    }
+    
+    .element .divImg {
+        height:30%;
+    }
+    .divImg > img {
+        height: auto;
+    }
+    .element.blueBkg img {
+        display: none;
     }
 }
-
-

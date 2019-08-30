@@ -47,10 +47,11 @@ p {
 .container {
     padding-top: 35px;
     padding-bottom: 35px;
+    font-family: Arial;
 }
 
 .sections {
-    background-color: rgb(15, 50, 60);
+    background-color: rgba(15, 50, 60);
 }
 
 .displayInline{
@@ -190,7 +191,7 @@ a, a:hover{
 }
 
 .night {
-    background-color: rgb(15, 50, 60);
+    background-color: #0f323c;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -255,6 +256,9 @@ div {
 .resumeItemTitle {
     font-size: medium;
     font-weight: bold;
+}
+.resumeDesc {
+    font-size: 1em;
 }
 
 .resumeItemSubtitle {

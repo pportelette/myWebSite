@@ -21,18 +21,14 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('author', TextType::class)
+            ->add('author',         TextType::class)
             /*->add('categories', ChoiceType::class, array(
                 'multiple' =>true,
             ))*/
-            ->add('title', TextType::class)
-            ->add('content', CKEditorType::class, array(
-                'config' => array(
-                    'uiColor' => '#eeeeee',
-                    'toolbar' => 'full'),
-                'input_sync' => true)
-            )
-            ->add('save', SubmitType::class);
+            ->add('title',          TextType::class)
+            ->add('presentation',   TextType::class)
+            ->add('content',        CKEditorType::class)
+            ->add('save',           SubmitType::class);
     }/**
      * {@inheritdoc}
      */

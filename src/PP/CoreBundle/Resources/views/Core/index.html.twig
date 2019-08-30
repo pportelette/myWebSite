@@ -5,75 +5,70 @@
     <link rel="stylesheet" href="{{ asset('bundles/ppcore/css/styleCore.css') }}">
 {% endblock %}
 {% block body %}
-  <section class="col-xs-10 col-md-9 mainSection">
-    <div id="homePage">
-      <h3>{{ 'about.title'| trans }}</h3>
-      <div class="col-md-12 displayInline">
-        <div class="col-md-7 col-sm-12 displayInline column horizontalRight element">
-          <h4 class="title"><strong>{{ 'about.me.title'| trans }}</strong></h4>
-          <p class="marginTop marginBottom">{{ 'about.me.body'| trans | nl2br }}</p>
-        </div>
-      </div>
+    <!--*******************HEADER SECTION*******************-->
+	<header>
+		<div class="header-inside">
+			<a href="{{ path('pp_core_homepage')}}"><h1>Pierre<span class="blueTxt">PORTELETTE</span></h1></a>
+			<nav>
+				<ul>
+					<a href="{{ path('pp_core_homepage')}}"><li class="active">About</li></a>
+					<a href="{{ path('pp_core_resume')}}"><li>Resume</li></a>
+					<a href="{{ path('pp_core_portfolio')}}"><li>Portfolio</li></a>
+					<a href="{{ path('pp_core_contact')}}"><li>Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-      <div class="col-md-12 displayInline">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-6 col-sm-12 displayInline column horizontalRight textRight element">
-          <h4 class="title"><strong>{{ 'about.work.title'| trans }}</strong></h4>
-          <p class="marginTop">{{ 'about.work.body'| trans | nl2br }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  	<section id="about">
+		<div class="element whiteBkg">
+			<div class="divImg">
+				<img src="{{ asset('bundles/ppcore/img/miniature.jpg') }}" alt="Photo de Pierre">
+			</div>  
+      		<div class="divText">
+                    <h4>{{ 'about.me.title'| trans }}</h4>
+          			<p>{{ 'about.me.body'| trans | nl2br }}</p>
+        	</div>
+		</div>
 
-  <div class="col-xs-2 col-md-3 displayInline column sideNav">
-    <div class="displayInline horizontalCenter verticalCenter marginBottom hidden-xs hidden-sm">
-        <img style="width: 50%;" src="{{ asset('bundles/ppcore/img/PhotoIdentite1.jpg') }}" alt="image1"/>
-    </div>
-    <div>
-      <a class="linkWhite" href="{{ path('pp_core_contact')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
-          <span class="size40 glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          <p>{{ 'E-MAIL'| trans }}</p>
-        </div>
-      </a>
-      <a class="linkWhite" href="{{ path('pp_core_resume')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
-          <span class="glyphicon size40 glyphicon-list-alt" aria-hidden="true"></span>
-          <p>{{ 'CV'| trans }}</p>
-        </div>
-      </a>
-      {% if is_granted('ROLE_ADMIN') %}
-      <a class="linkWhite" href="http://localhost/myMegaPV/web/app_dev.php/register">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
-          <span class="glyphicon size40 glyphicon-object-align-bottom" aria-hidden="true"></span>
-          <p>{{ 'DEMO'| trans }}</p>
-        </div>
-      </a>
-      <a class="linkWhite" href="{{ path('pp_blog_homepage')}}">
-        <div class="col-md-4 displayInline column linkWhite verticalCenter icon marginTop">
-          <span class="size40 glyphicon glyphicon-th-list" aria-hidden="true"></span>
-          <p>{{ 'BLOG'| trans }}</p>
-        </div>
-      </a>
-      {% endif %}
-      <a class="linkWhite" href="https://www.linkedin.com/in/pierre-portelette-1885a184">
-        <div class="col-md-4 displayInline column verticalCenter">
-            <svg class="iconWhite marginTop" version="1.1" x="0px" y="0px" viewBox="0 0 66.9 66.6" style="enable-background:new 0 0 66.9 66.6;">
-              <path d="M66.8,7.3c0-5.8-1.3-7.2-6.9-7.3c-17.7,0-35.3,0-53,0C1.4,0,0,1.4,0,6.8c0,17.7,0,35.3-0.1,53
-                  c0,3.1,0.8,5.6,3.9,6.8c19.7,0,39.4,0,59,0c3.4-1.3,3.9-4,3.9-7.3C66.8,41.9,66.8,24.6,66.8,7.3z M15.5,55.6
-                  c-2.1-0.1-5.4,1.7-5.3-2.8c0.1-8.1,0-16.3,0-24.4c0-4.1,3.1-2.6,5-2.6s5.1-1.5,5,2.6c0,4.2,0,8.3,0,12.5c0,4-0.1,8,0,12
-                  C20.4,56.9,17.4,55.7,15.5,55.6z M15,21.5c-3.1-0.3-5.3-1.8-5.2-5.2c0.1-3.5,2.2-5,5.5-5c3.5,0,5.8,1.8,5.6,5.4
-                  C20.7,20.1,18.3,21.4,15,21.5z M56.6,53.1c0,4.5-3.6,2.2-5.6,2.5c-1.9,0.3-4.6,1.1-4.4-2.7c0.2-4.3,0.1-8.7,0-13
-                  c-0.1-3.5-0.7-7.1-5.3-6.9c-4.1,0.2-5.4,3.2-5.3,7c0.1,3.3,0.1,6.7,0,10c-0.1,1.8,1.1,4.6-1,5.3c-2.4,0.8-5.3,0.5-7.9,0.1
-                  c-1.8-0.2-1-2.2-1-3.4c-0.1-7.5-0.1-15,0-22.5c0-1.6-0.9-4.4,2.1-3.9c2.8,0.5,7.2-2.8,8.3,3.4c4-4.5,8.6-4.9,13.3-3.3
-                  c4.6,1.6,6.5,5.6,6.7,10.2C56.7,41.7,56.7,47.4,56.6,53.1z"/>
-            </svg>
-            <p>{{ 'LinkedIn'| trans }}</p>
-        </div>
-      </a>
-    </div>
-    
-  </div>
+		<div class="element blueBkg">
+			<div class="divText">
+				<h4>{{ 'about.work.title'| trans }}</h4>
+				<p>{{ 'about.work.body'| trans | nl2br }}</p>
+			</div>
+			<div class="divImg">
+				<img src="{{ asset('bundles/ppcore/img/891.jpg') }}" alt="Photo d'ordinateur">
+			</div>
+		</div>
+
+		<h2 class="sectionTitle">My skills and competencies</h2>
+		<div class="element whiteBkg">
+			<div class="skill blueBkg">
+				<p><strong>HTML 5</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>
+			</div>
+			<div class="skill whityBkg">
+				<p><strong>CSS 3</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path></svg>
+			</div>
+			<div class="skill blueBkg">
+				<p><strong>WordPress</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z"></path></svg>
+			</div>
+			<div class="skill whityBkg">
+				<p><strong>JavaScript</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path></svg>
+			</div>
+			<div class="skill blueBkg">
+				<p><strong>PHP</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path></svg>
+			</div>
+			
+			<div class="skill whityBkg">
+				<p><strong>Symfony</strong></p>
+				<svg aria-hidden="true" focusable="false" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm133.74 143.54c-11.47.41-19.4-6.45-19.77-16.87-.27-9.18 6.68-13.44 6.53-18.85-.23-6.55-10.16-6.82-12.87-6.67-39.78 1.29-48.59 57-58.89 113.85 21.43 3.15 36.65-.72 45.14-6.22 12-7.75-3.34-15.72-1.42-24.56 4-18.16 32.55-19 32 5.3-.36 17.86-25.92 41.81-77.6 35.7-10.76 59.52-18.35 115-58.2 161.72-29 34.46-58.4 39.82-71.58 40.26-24.65.85-41-12.31-41.58-29.84-.56-17 14.45-26.26 24.31-26.59 21.89-.75 30.12 25.67 14.88 34-12.09 9.71.11 12.61 2.05 12.55 10.42-.36 17.34-5.51 22.18-9 24-20 33.24-54.86 45.35-118.35 8.19-49.66 17-78 18.23-82-16.93-12.75-27.08-28.55-49.85-34.72-15.61-4.23-25.12-.63-31.81 7.83-7.92 10-5.29 23 2.37 30.7l12.63 14c15.51 17.93 24 31.87 20.8 50.62-5.06 29.93-40.72 52.9-82.88 39.94-36-11.11-42.7-36.56-38.38-50.62 7.51-24.15 42.36-11.72 34.62 13.6-2.79 8.6-4.92 8.68-6.28 13.07-4.56 14.77 41.85 28.4 51-1.39 4.47-14.52-5.3-21.71-22.25-39.85-28.47-31.75-16-65.49 2.95-79.67C204.23 140.13 251.94 197 262 205.29c37.17-109 100.53-105.46 102.43-105.53 25.16-.81 44.19 10.59 44.83 28.65.25 7.69-4.17 22.59-19.52 23.13z"></path></svg>
+			</div>
+		</div>
+	</section>
 
 {% endblock %}

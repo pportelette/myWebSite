@@ -1,1 +1,24 @@
 {{ form(commentForm) }}
+{{ form_start(commentForm, {'attr': {'class': 'form-horizontal'}}) }}
+
+{{ form_errors(commentForm) }}
+
+<div class="col-md-12 displayInline column">
+    {{ form_errors(commentForm.username) }}
+    <div class="col-md-12">
+        {{ form_widget(commentForm.username) }}
+    </div>
+
+    {{ form_errors(commentForm.content) }}
+    <div class="col-md-12">
+        {{ form_widget(commentForm.content) }}
+    </div>
+
+    <div class="col-md-12 displayInline horizontalCenter bordered">
+        {{ form_widget(commentForm.Comment, {'attr': {'class': 'btn-default'}}) }}
+    </div>
+</div>
+
+{{ form_rest(commentForm) }}
+
+{{ form_end(commentForm) }}

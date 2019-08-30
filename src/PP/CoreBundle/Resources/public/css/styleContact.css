@@ -1,130 +1,54 @@
-:root {
-    --night: #0C1B31;
-    --myorange: #D45440;
-    --mygray: #F2F2F2;
+/**************CONTACT*****************/
+#contact {
+    position: relative;
 }
-body {
-    background-color: #F2F2F2;
-}
-
-div {
-    margin: 0; 
-    padding: 0;
-}
-
-.deco {
-    background-color: #D45440;
-}
-
-.element:nth-child(1)
-{
-    height: 45%;
-}
-.element:nth-child(2)
-{
-    height: 55%;
-}
-
-.premierplan {
+#contact * {
     z-index: 1;
 }
-
-.title {
-    text-decoration: underline;
-    text-decoration-color: #D45440;
+#contact .elements {
+    background-color: rgba(255,255,255,0.5);
 }
-
-icon {
-    height: 200px;
-}
-
-.resumeTitle {
-    font-size: large;
-    font-weight: bold;
-    padding-top: 5px;
-}
-.resumeItemTitle {
-    font-size: medium;
-    font-weight: bold;
-}
-
-.resumeItemSubtitle {
-    font-size: small;
-}
-
-.companyName {
-    color: #D45440;
-    font-weight: bold;
-}
-
-.education {
-    text-align: right;
-}
-
-.lineNight {
-    border-bottom: #0C1B31 1.5px solid;
-    border-top: #F2F2F2 1px solid;
-}
-
-.lineGrey {
-    border-bottom: white 1.5px solid;
-    border-top: #0C1B31 1px solid
-}
-
-.mygrey .resumeTitle{
-    color: #0C1B31;
-}
-
-.night .resumeTitle{
-    color: white;
-}
-
-.col-md-6, .col-md-12 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.photoResume {
+#contact img {
     position: absolute;
-    top: 80px;
-    left: 50%;
-    width: 160px;
-    border: 6px #F2F2F2 solid;
-    border-radius: 50%;
-    margin-left: -80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+}
+.contactForm {
+    margin-left: 10%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    box-shadow: 6px 6px 10px var(--myGray);
 }
 
-.underline {
-    border-bottom: #D45440 1px solid;
+.inline > input {
+    flex: 1;
 }
 
-button {
-    border: 0px;
-    background-color: #F2F2F2;
+@media all and (max-width: 1000px) {
+    .contactForm {
+        width:70%;
+    }
+    ::placeholder {
+        font-size: 0.9em;
+    }
+    :placeholder-shown {
+        font-size: 0.9em;
+    }
 }
-
-textarea{
-    min-height: 200px;
-}
-
-button {
-    width: 50%;
-}
-
-.btn-default:hover {
-    background-color: #D45440;
-}
-
-.btn-default {
-    border-radius: 0px;
-}
-
-.iconBlue {
-    height: 40px;
-    fill:#0C1B31;
-}
-
-.iconWhite {
-    height: 40px;
-    fill:white;
+@media all and (max-width: 650px) {
+    .contactForm {
+        margin-left: 5%;
+        width:90%;
+    }
+    .inline {
+        flex-direction: column;
+    }
 }
