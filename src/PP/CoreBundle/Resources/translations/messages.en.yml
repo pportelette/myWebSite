@@ -80,4 +80,8 @@ portfolio:
     desc: As the title says it is a booking bikes application using API and javascript.
   omegapv:
     title: PV assets management tool
-    desc: Coming soon !
+    desc: This is an unfished personnal project for PV asset management and powered by Symfony. However the idea is here and some functions work fine and can be tested.
+  project4:
+    title: |
+      Training project 4: Jean Forteroche's blog
+    desc: A whole blog with its own backend interface coded in php.
