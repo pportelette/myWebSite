@@ -4367,6 +4367,11 @@
         {
             "name": "sensio/generator-bundle",
             "version": "v3.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
+                "reference": "28cbaa244bd0816fd8908b93f90380bcd7b67a65"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/28cbaa244bd0816fd8908b93f90380bcd7b67a65",
@@ -4411,14 +4416,20 @@
                 }
             ],
             "description": "This bundle generates code for you",
+            "abandoned": "symfony/maker-bundle",
             "time": "2017-12-07T15:36:41+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
             "version": "v3.4.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/phpunit-bridge.git",
+                "reference": "260a244e5bddadd61889ae5201d01a8234c4f076"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/phpunit-bridge/v3.4.45/symfony-phpunit-bridge-v3.4.45.zip",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/260a244e5bddadd61889ae5201d01a8234c4f076",
                 "reference": "260a244e5bddadd61889ae5201d01a8234c4f076",
                 "shasum": ""
             },
