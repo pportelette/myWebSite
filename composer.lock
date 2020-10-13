@@ -4,14 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0987a81cb09d7ea60a217ed3a112826",
+    "content-hash": "6fa94c4f300137693dcf15d9a3bce3b9",
     "packages": [
         {
             "name": "behat/transliterator",
             "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/Transliterator.git",
+                "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/behat/transliterator/v1.3.0/behat-transliterator-v1.3.0.zip",
+                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
                 "reference": "3c4ec1d77c3d05caa1f0bf8fb3aae4845005c7fc",
                 "shasum": ""
             },
@@ -48,9 +53,14 @@
         {
             "name": "composer/package-versions-deprecated",
             "version": "1.11.99",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/composer/package-versions-deprecated/1.11.99/composer-package-versions-deprecated-1.11.99.zip",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
                 "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
                 "shasum": ""
             },
@@ -97,6 +107,11 @@
         {
             "name": "coresphere/console-bundle",
             "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CoreSphere/ConsoleBundle.git",
+                "reference": "7761030372974d890bc19cee38f23a6f43c2d974"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/CoreSphere/ConsoleBundle/zipball/7761030372974d890bc19cee38f23a6f43c2d974",
@@ -149,9 +164,14 @@
         {
             "name": "doctrine/annotations",
             "version": "1.10.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "bfe91e31984e2ba76df1c1339681770401ec262f"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/annotations/1.10.4/doctrine-annotations-1.10.4.zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bfe91e31984e2ba76df1c1339681770401ec262f",
                 "reference": "bfe91e31984e2ba76df1c1339681770401ec262f",
                 "shasum": ""
             },
@@ -213,9 +233,14 @@
         {
             "name": "doctrine/cache",
             "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "13e3381b25847283a91948d04640543941309727"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/cache/1.10.2/doctrine-cache-1.10.2.zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/13e3381b25847283a91948d04640543941309727",
                 "reference": "13e3381b25847283a91948d04640543941309727",
                 "shasum": ""
             },
@@ -289,9 +314,14 @@
         {
             "name": "doctrine/collections",
             "version": "1.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/collections.git",
+                "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/collections/1.6.7/doctrine-collections-1.6.7.zip",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/55f8b799269a1a472457bd1a41b4f379d4cfba4a",
                 "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a",
                 "shasum": ""
             },
@@ -348,9 +378,14 @@
         {
             "name": "doctrine/common",
             "version": "2.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/common.git",
+                "reference": "f3812c026e557892c34ef37f6ab808a6b567da7f"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/common/2.13.3/doctrine-common-2.13.3.zip",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/f3812c026e557892c34ef37f6ab808a6b567da7f",
                 "reference": "f3812c026e557892c34ef37f6ab808a6b567da7f",
                 "shasum": ""
             },
@@ -425,9 +460,14 @@
         {
             "name": "doctrine/dbal",
             "version": "2.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "6e6903cd5e3a5be60a79439e3ee8fe126f78fe86"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/dbal/2.11.1/doctrine-dbal-2.11.1.zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/6e6903cd5e3a5be60a79439e3ee8fe126f78fe86",
                 "reference": "6e6903cd5e3a5be60a79439e3ee8fe126f78fe86",
                 "shasum": ""
             },
@@ -513,9 +553,14 @@
         {
             "name": "doctrine/doctrine-bundle",
             "version": "1.12.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineBundle.git",
+                "reference": "2ee4c25a847e744e93d7fc2895e059ad9ef7d10c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/doctrine-bundle/1.12.10/doctrine-doctrine-bundle-1.12.10.zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/2ee4c25a847e744e93d7fc2895e059ad9ef7d10c",
                 "reference": "2ee4c25a847e744e93d7fc2895e059ad9ef7d10c",
                 "shasum": ""
             },
@@ -601,9 +646,14 @@
         {
             "name": "doctrine/doctrine-cache-bundle",
             "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
+                "reference": "6bee2f9b339847e8a984427353670bad4e7bdccb"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/doctrine-cache-bundle/1.4.0/doctrine-doctrine-cache-bundle-1.4.0.zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/6bee2f9b339847e8a984427353670bad4e7bdccb",
                 "reference": "6bee2f9b339847e8a984427353670bad4e7bdccb",
                 "shasum": ""
             },
@@ -686,9 +736,14 @@
         {
             "name": "doctrine/event-manager",
             "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/event-manager/1.1.1/doctrine-event-manager-1.1.1.zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
                 "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
                 "shasum": ""
             },
@@ -756,9 +811,14 @@
         {
             "name": "doctrine/inflector",
             "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "4650c8b30c753a76bf44fb2ed00117d6f367490c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/inflector/1.4.3/doctrine-inflector-1.4.3.zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/4650c8b30c753a76bf44fb2ed00117d6f367490c",
                 "reference": "4650c8b30c753a76bf44fb2ed00117d6f367490c",
                 "shasum": ""
             },
@@ -828,9 +888,14 @@
         {
             "name": "doctrine/instantiator",
             "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/instantiator/1.3.1/doctrine-instantiator-1.3.1.zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f350df0268e904597e3bd9c4685c53e0e333feea",
                 "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
                 "shasum": ""
             },
@@ -878,9 +943,14 @@
         {
             "name": "doctrine/lexer",
             "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "e864bbf5904cb8f5bb334f99209b48018522f042"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/lexer/1.2.1/doctrine-lexer-1.2.1.zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e864bbf5904cb8f5bb334f99209b48018522f042",
                 "reference": "e864bbf5904cb8f5bb334f99209b48018522f042",
                 "shasum": ""
             },
@@ -934,9 +1004,14 @@
         {
             "name": "doctrine/orm",
             "version": "2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/orm.git",
+                "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/orm/2.7.4/doctrine-orm-2.7.4.zip",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/7d84a4998091ece4d645253ac65de9f879eeed2f",
                 "reference": "7d84a4998091ece4d645253ac65de9f879eeed2f",
                 "shasum": ""
             },
@@ -1016,9 +1091,14 @@
         {
             "name": "doctrine/persistence",
             "version": "1.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/persistence.git",
+                "reference": "7a6eac9fb6f61bba91328f15aa7547f4806ca288"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/persistence/1.3.8/doctrine-persistence-1.3.8.zip",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/7a6eac9fb6f61bba91328f15aa7547f4806ca288",
                 "reference": "7a6eac9fb6f61bba91328f15aa7547f4806ca288",
                 "shasum": ""
             },
@@ -1094,9 +1174,14 @@
         {
             "name": "doctrine/reflection",
             "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/reflection.git",
+                "reference": "55e71912dfcd824b2fdd16f2d9afe15684cfce79"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/doctrine/reflection/1.2.1/doctrine-reflection-1.2.1.zip",
+                "url": "https://api.github.com/repos/doctrine/reflection/zipball/55e71912dfcd824b2fdd16f2d9afe15684cfce79",
                 "reference": "55e71912dfcd824b2fdd16f2d9afe15684cfce79",
                 "shasum": ""
             },
@@ -1166,9 +1251,14 @@
         {
             "name": "fig/link-util",
             "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/link-util.git",
+                "reference": "c038ee75ca13663ddc2d1f185fe6f7533c00832a"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/fig/link-util/1.1.1/fig-link-util-1.1.1.zip",
+                "url": "https://api.github.com/repos/php-fig/link-util/zipball/c038ee75ca13663ddc2d1f185fe6f7533c00832a",
                 "reference": "c038ee75ca13663ddc2d1f185fe6f7533c00832a",
                 "shasum": ""
             },
@@ -1217,9 +1307,14 @@
         {
             "name": "friendsofsymfony/ckeditor-bundle",
             "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle.git",
+                "reference": "7e1cfe2a83faba0be02661d44289d35e940bb5ea"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/friendsofsymfony/ckeditor-bundle/2.2.0/friendsofsymfony-ckeditor-bundle-2.2.0.zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/7e1cfe2a83faba0be02661d44289d35e940bb5ea",
                 "reference": "7e1cfe2a83faba0be02661d44289d35e940bb5ea",
                 "shasum": ""
             },
@@ -1289,9 +1384,14 @@
         {
             "name": "gedmo/doctrine-extensions",
             "version": "v2.4.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
+                "reference": "b6c4442b4f32ce05673fbdf1fa4a2d5e315cc0a4"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/gedmo/doctrine-extensions/v2.4.42/gedmo-doctrine-extensions-v2.4.42.zip",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/b6c4442b4f32ce05673fbdf1fa4a2d5e315cc0a4",
                 "reference": "b6c4442b4f32ce05673fbdf1fa4a2d5e315cc0a4",
                 "shasum": ""
             },
@@ -1365,9 +1465,14 @@
         {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/guzzlehttp/guzzle/6.5.5/guzzlehttp-guzzle-6.5.5.zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "shasum": ""
             },
@@ -1426,9 +1531,14 @@
         {
             "name": "guzzlehttp/promises",
             "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/guzzlehttp/promises/1.4.0/guzzlehttp-promises-1.4.0.zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
                 "reference": "60d379c243457e073cff02bc323a2a86cb355631",
                 "shasum": ""
             },
@@ -1471,9 +1581,14 @@
         {
             "name": "guzzlehttp/psr7",
             "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/guzzlehttp/psr7/1.7.0/guzzlehttp-psr7-1.7.0.zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
@@ -1536,9 +1651,14 @@
         {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Incenteev/ParameterHandler.git",
+                "reference": "084befb11ec21faeadcddefb88b66132775ff59b"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/incenteev/composer-parameter-handler/v2.1.4/incenteev-composer-parameter-handler-v2.1.4.zip",
+                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/084befb11ec21faeadcddefb88b66132775ff59b",
                 "reference": "084befb11ec21faeadcddefb88b66132775ff59b",
                 "shasum": ""
             },
@@ -1581,6 +1701,11 @@
         {
             "name": "jdorn/sql-formatter",
             "version": "v1.2.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdorn/sql-formatter.git",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
@@ -1625,19 +1750,25 @@
         },
         {
             "name": "jenssegers/proxy",
-            "version": "v3.0.2",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/php-proxy.git",
+                "reference": "7bbe462d2469c751efcf324df8edee3b73261655"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/jenssegers/proxy/v3.0.2/jenssegers-proxy-v3.0.2.zip",
-                "reference": "74bd607f6a10116e18abf33a6b47ccf535874102",
+                "url": "https://api.github.com/repos/jenssegers/php-proxy/zipball/7bbe462d2469c751efcf324df8edee3b73261655",
+                "reference": "7bbe462d2469c751efcf324df8edee3b73261655",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0",
+                "laminas/laminas-diactoros": "^2.0",
+                "laminas/laminas-httphandlerrunner": "^1.1",
                 "php": "^5.6 || ^7.0",
                 "psr/http-message": "^1.0",
-                "relay/relay": "^1.0",
-                "zendframework/zend-diactoros": "^1.0 || ^2.0"
+                "relay/relay": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1",
@@ -1650,6 +1781,7 @@
                     "Proxy\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1669,14 +1801,19 @@
             "keywords": [
                 "proxy"
             ],
-            "time": "2019-08-03T09:01:50+00:00"
+            "time": "2020-03-06T09:32:20+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
             "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/snappy.git",
+                "reference": "7bac60fb729147b7ccd8532c07df3f52a4afa8a4"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/knplabs/knp-snappy/v1.2.1/knplabs-knp-snappy-v1.2.1.zip",
+                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/7bac60fb729147b7ccd8532c07df3f52a4afa8a4",
                 "reference": "7bac60fb729147b7ccd8532c07df3f52a4afa8a4",
                 "shasum": ""
             },
@@ -1734,9 +1871,14 @@
         {
             "name": "knplabs/knp-snappy-bundle",
             "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpSnappyBundle.git",
+                "reference": "89a633d30d39b71b38511b70e1f0495164140933"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/knplabs/knp-snappy-bundle/v1.7.1/knplabs-knp-snappy-bundle-v1.7.1.zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpSnappyBundle/zipball/89a633d30d39b71b38511b70e1f0495164140933",
                 "reference": "89a633d30d39b71b38511b70e1f0495164140933",
                 "shasum": ""
             },
@@ -1791,11 +1933,226 @@
             "time": "2020-09-11T12:51:46+00:00"
         },
         {
-            "name": "monolog/monolog",
-            "version": "1.25.5",
+            "name": "laminas/laminas-diactoros",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-diactoros.git",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/monolog/monolog/1.25.5/monolog-monolog-1.25.5.zip",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/36ef09b73e884135d2059cc498c938e90821bb57",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^7.1",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "conflict": {
+                "phpspec/prophecy": "<1.9.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "replace": {
+                "zendframework/zend-diactoros": "^2.2.1"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-libxml": "*",
+                "http-interop/http-factory-tests": "^0.5.0",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5.18"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Laminas\\Diactoros\\ConfigProvider",
+                    "module": "Laminas\\Diactoros"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php",
+                    "src/functions/create_uploaded_file.legacy.php",
+                    "src/functions/marshal_headers_from_sapi.legacy.php",
+                    "src/functions/marshal_method_from_sapi.legacy.php",
+                    "src/functions/marshal_protocol_version_from_sapi.legacy.php",
+                    "src/functions/marshal_uri_from_sapi.legacy.php",
+                    "src/functions/normalize_server.legacy.php",
+                    "src/functions/normalize_uploaded_files.legacy.php",
+                    "src/functions/parse_cookie_header.legacy.php"
+                ],
+                "psr-4": {
+                    "Laminas\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "http",
+                "laminas",
+                "psr",
+                "psr-17",
+                "psr-7"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-09-03T14:29:41+00:00"
+        },
+        {
+            "name": "laminas/laminas-httphandlerrunner",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
+                "reference": "e1a5dad040e0043135e8095ee27d1fbf6fb640e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/e1a5dad040e0043135e8095ee27d1fbf6fb640e1",
+                "reference": "e1a5dad040e0043135e8095ee27d1fbf6fb640e1",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^7.1",
+                "psr/http-message": "^1.0",
+                "psr/http-message-implementation": "^1.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "replace": {
+                "zendframework/zend-httphandlerrunner": "^1.1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-diactoros": "^1.7 || ^2.1.1",
+                "phpunit/phpunit": "^7.0.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev",
+                    "dev-develop": "1.3.x-dev"
+                },
+                "laminas": {
+                    "config-provider": "Laminas\\HttpHandlerRunner\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\HttpHandlerRunner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Execute PSR-15 RequestHandlerInterface instances and emit responses they generate.",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "components",
+                "laminas",
+                "mezzio",
+                "psr-15",
+                "psr-7"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-06-03T15:52:17+00:00"
+        },
+        {
+            "name": "laminas/laminas-zendframework-bridge",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Laminas\\ZendFrameworkBridge"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ZendFrameworkBridge\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
+            "keywords": [
+                "ZendFramework",
+                "autoloading",
+                "laminas",
+                "zf"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-09-14T14:23:00+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.25.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1817faadd1846cd08be9a49e905dc68823bc38c0",
                 "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0",
                 "shasum": ""
             },
@@ -1864,6 +2221,11 @@
         {
             "name": "paragonie/random_compat",
             "version": "v9.99.99",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
@@ -1904,6 +2266,11 @@
         {
             "name": "psr/cache",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
@@ -1945,6 +2312,11 @@
         {
             "name": "psr/container",
             "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
@@ -1989,9 +2361,14 @@
         {
             "name": "psr/http-factory",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/psr/http-factory/1.0.1/psr-http-factory-1.0.1.zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
                 "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
                 "shasum": ""
             },
@@ -2035,9 +2412,14 @@
         {
             "name": "psr/http-message",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/psr/http-message/1.0.1/psr-http-message-1.0.1.zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
@@ -2077,8 +2459,66 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
+            "name": "psr/http-server-handler",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "time": "2018-10-30T16:46:14+00:00"
+        },
+        {
             "name": "psr/link",
             "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/link.git",
+                "reference": "eea8e8662d5cd3ae4517c9b864493f59fca95562"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/link/zipball/eea8e8662d5cd3ae4517c9b864493f59fca95562",
@@ -2123,9 +2563,14 @@
         {
             "name": "psr/log",
             "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/psr/log/1.1.3/psr-log-1.1.3.zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "shasum": ""
             },
@@ -2164,6 +2609,11 @@
         {
             "name": "psr/simple-cache",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
@@ -2207,9 +2657,14 @@
         {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/ralouphie/getallheaders/3.0.3/ralouphie-getallheaders-3.0.3.zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
                 "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
@@ -2241,9 +2696,14 @@
         {
             "name": "relay/relay",
             "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/relayphp/Relay.Relay.git",
+                "reference": "e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/relay/relay/1.1.0/relay-relay-1.1.0.zip",
+                "url": "https://api.github.com/repos/relayphp/Relay.Relay/zipball/e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae",
                 "reference": "e835fc45351b7a92a6fdf2a36be7bd59ef56c8ae",
                 "shasum": ""
             },
@@ -2280,6 +2740,11 @@
         {
             "name": "sensio/distribution-bundle",
             "version": "v5.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
+                "reference": "80a38234bde8321fb92aa0b8c27978a272bb4baf"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/80a38234bde8321fb92aa0b8c27978a272bb4baf",
@@ -2322,11 +2787,17 @@
                 "configuration",
                 "distribution"
             ],
+            "abandoned": true,
             "time": "2019-06-18T15:43:58+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
             "version": "v5.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
+                "reference": "585f4b3a1c54f24d1a8431c729fc8f5acca20c8a"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/585f4b3a1c54f24d1a8431c729fc8f5acca20c8a",
@@ -2395,9 +2866,14 @@
         {
             "name": "sensiolabs/security-checker",
             "version": "v6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/security-checker.git",
+                "reference": "a576c01520d9761901f269c4934ba55448be4a54"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/sensiolabs/security-checker/v6.0.3/sensiolabs-security-checker-v6.0.3.zip",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/a576c01520d9761901f269c4934ba55448be4a54",
                 "reference": "a576c01520d9761901f269c4934ba55448be4a54",
                 "shasum": ""
             },
@@ -2437,6 +2913,11 @@
         {
             "name": "stof/doctrine-extensions-bundle",
             "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
+                "reference": "46db71ec7ffee9122eca3cdddd4ef8d84bae269c"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/46db71ec7ffee9122eca3cdddd4ef8d84bae269c",
@@ -2497,6 +2978,11 @@
         {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "181b89f18a90f8925ef805f950d47a7190e9b950"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/181b89f18a90f8925ef805f950d47a7190e9b950",
@@ -2546,9 +3032,14 @@
         {
             "name": "symfony/http-client",
             "version": "v5.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client.git",
+                "reference": "df757997ee95101c0ca94c7ea2b76e16a758e0ca"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/http-client/v5.1.7/symfony-http-client-v5.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/df757997ee95101c0ca94c7ea2b76e16a758e0ca",
                 "reference": "df757997ee95101c0ca94c7ea2b76e16a758e0ca",
                 "shasum": ""
             },
@@ -2612,9 +3103,14 @@
         {
             "name": "symfony/http-client-contracts",
             "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/http-client-contracts/v2.2.0/symfony-http-client-contracts-v2.2.0.zip",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3",
                 "reference": "3a5d0fe7908daaa23e3dbf4cee3ba4bfbb19fdd3",
                 "shasum": ""
             },
@@ -2667,9 +3163,14 @@
         {
             "name": "symfony/mime",
             "version": "v5.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "4404d6545125863561721514ad9388db2661eec5"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/mime/v5.1.7/symfony-mime-v5.1.7.zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/4404d6545125863561721514ad9388db2661eec5",
                 "reference": "4404d6545125863561721514ad9388db2661eec5",
                 "shasum": ""
             },
@@ -2724,9 +3225,14 @@
         {
             "name": "symfony/monolog-bundle",
             "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/monolog-bundle.git",
+                "reference": "e495f5c7e4e672ffef4357d4a4d85f010802f940"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/monolog-bundle/v3.6.0/symfony-monolog-bundle-v3.6.0.zip",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/e495f5c7e4e672ffef4357d4a4d85f010802f940",
                 "reference": "e495f5c7e4e672ffef4357d4a4d85f010802f940",
                 "shasum": ""
             },
@@ -2781,9 +3287,14 @@
         {
             "name": "symfony/polyfill-apcu",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-apcu.git",
+                "reference": "f1d94a98e364f4b84252331a40cb7987b847e241"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-apcu/v1.18.1/symfony-polyfill-apcu-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/f1d94a98e364f4b84252331a40cb7987b847e241",
                 "reference": "f1d94a98e364f4b84252331a40cb7987b847e241",
                 "shasum": ""
             },
@@ -2835,9 +3346,14 @@
         {
             "name": "symfony/polyfill-ctype",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-ctype/v1.18.1/symfony-polyfill-ctype-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
                 "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
                 "shasum": ""
             },
@@ -2891,9 +3407,14 @@
         {
             "name": "symfony/polyfill-intl-icu",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-icu.git",
+                "reference": "4e45a6e39041a9cc78835b11abc47874ae302a55"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-intl-icu/v1.18.1/symfony-polyfill-intl-icu-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-icu/zipball/4e45a6e39041a9cc78835b11abc47874ae302a55",
                 "reference": "4e45a6e39041a9cc78835b11abc47874ae302a55",
                 "shasum": ""
             },
@@ -2947,9 +3468,14 @@
         {
             "name": "symfony/polyfill-intl-idn",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "5dcab1bc7146cf8c1beaa4502a3d9be344334251"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-intl-idn/v1.18.1/symfony-polyfill-intl-idn-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/5dcab1bc7146cf8c1beaa4502a3d9be344334251",
                 "reference": "5dcab1bc7146cf8c1beaa4502a3d9be344334251",
                 "shasum": ""
             },
@@ -3012,9 +3538,14 @@
         {
             "name": "symfony/polyfill-intl-normalizer",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
+                "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-intl-normalizer/v1.18.1/symfony-polyfill-intl-normalizer-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
                 "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
                 "shasum": ""
             },
@@ -3073,9 +3604,14 @@
         {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-mbstring/v1.18.1/symfony-polyfill-mbstring-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "shasum": ""
             },
@@ -3130,9 +3666,14 @@
         {
             "name": "symfony/polyfill-php56",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-php56/v1.18.1/symfony-polyfill-php56-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/13df84e91cd168f247c2f2ec82cc0fa24901c011",
                 "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011",
                 "shasum": ""
             },
@@ -3184,9 +3725,14 @@
         {
             "name": "symfony/polyfill-php70",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php70.git",
+                "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-php70/v1.18.1/symfony-polyfill-php70-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
                 "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
                 "shasum": ""
             },
@@ -3241,9 +3787,14 @@
         {
             "name": "symfony/polyfill-php72",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "639447d008615574653fb3bc60d1986d7172eaae"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-php72/v1.18.1/symfony-polyfill-php72-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/639447d008615574653fb3bc60d1986d7172eaae",
                 "reference": "639447d008615574653fb3bc60d1986d7172eaae",
                 "shasum": ""
             },
@@ -3294,9 +3845,14 @@
         {
             "name": "symfony/polyfill-php73",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php73.git",
+                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-php73/v1.18.1/symfony-polyfill-php73-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "shasum": ""
             },
@@ -3350,9 +3906,14 @@
         {
             "name": "symfony/polyfill-php80",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-php80/v1.18.1/symfony-polyfill-php80-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "shasum": ""
             },
@@ -3410,9 +3971,14 @@
         {
             "name": "symfony/polyfill-util",
             "version": "v1.18.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-util.git",
+                "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/polyfill-util/v1.18.1/symfony-polyfill-util-v1.18.1.zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/46b910c71e9828f8ec2aa7a0314de1130d9b295a",
                 "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a",
                 "shasum": ""
             },
@@ -3460,9 +4026,14 @@
         {
             "name": "symfony/service-contracts",
             "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/service-contracts/v2.2.0/symfony-service-contracts-v2.2.0.zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "shasum": ""
             },
@@ -3516,6 +4087,11 @@
         {
             "name": "symfony/swiftmailer-bundle",
             "version": "v2.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/swiftmailer-bundle.git",
+                "reference": "c4808f5169efc05567be983909d00f00521c53ec"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/c4808f5169efc05567be983909d00f00521c53ec",
@@ -3570,9 +4146,14 @@
         {
             "name": "symfony/symfony",
             "version": "v3.4.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/symfony.git",
+                "reference": "acaf962168168e4a5cd4b0a6d349dfc11fcc774d"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/symfony/symfony/v3.4.45/symfony-symfony-v3.4.45.zip",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/acaf962168168e4a5cd4b0a6d349dfc11fcc774d",
                 "reference": "acaf962168168e4a5cd4b0a6d349dfc11fcc774d",
                 "shasum": ""
             },
@@ -3720,9 +4301,14 @@
         {
             "name": "twig/twig",
             "version": "v2.13.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "57e96259776ddcacf1814885fc3950460c8e18ef"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/twig/twig/v2.13.1/twig-twig-v2.13.1.zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/57e96259776ddcacf1814885fc3950460c8e18ef",
                 "reference": "57e96259776ddcacf1814885fc3950460c8e18ef",
                 "shasum": ""
             },
@@ -3775,78 +4361,12 @@
                 "templating"
             ],
             "time": "2020-08-05T15:09:04+00:00"
-        },
-        {
-            "name": "zendframework/zend-diactoros",
-            "version": "2.2.1",
-            "dist": {
-                "type": "zip",
-                "url": "http://192.168.155.42:3030/repository/aliengen-packagist/zendframework/zend-diactoros/2.2.1/zendframework-zend-diactoros-2.2.1.zip",
-                "reference": "de5847b068362a88684a55b0dbb40d85986cfa52",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "1.0",
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "http-interop/http-factory-tests": "^0.5.0",
-                "php-http/psr7-integration-tests": "dev-master",
-                "phpunit/phpunit": "^7.0.2",
-                "zendframework/zend-coding-standard": "~1.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1.x-dev",
-                    "dev-develop": "2.2.x-dev",
-                    "dev-release-1.8": "1.8.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions/create_uploaded_file.php",
-                    "src/functions/marshal_headers_from_sapi.php",
-                    "src/functions/marshal_method_from_sapi.php",
-                    "src/functions/marshal_protocol_version_from_sapi.php",
-                    "src/functions/marshal_uri_from_sapi.php",
-                    "src/functions/normalize_server.php",
-                    "src/functions/normalize_uploaded_files.php",
-                    "src/functions/parse_cookie_header.php"
-                ],
-                "psr-4": {
-                    "Zend\\Diactoros\\": "src/"
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "PSR HTTP Message implementations",
-            "keywords": [
-                "http",
-                "psr",
-                "psr-7"
-            ],
-            "time": "2019-11-13T19:16:13+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "sensio/generator-bundle",
             "version": "v3.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "28cbaa244bd0816fd8908b93f90380bcd7b67a65"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/28cbaa244bd0816fd8908b93f90380bcd7b67a65",
